@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/pkmn_diagonal.png" type="Texture" id=1]
+[ext_resource path="res://Code/mvmnt.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/pkmn_straight.png" type="Texture" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" type="Node2D" parent="."]
+script = ExtResource( 2 )
+
+[node name="pkmn_straight" type="Sprite" parent="Player"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="pkmn_diagonal" type="Sprite" parent="Player"]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+anchor_mode = 0
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="LineEdit" type="LineEdit" parent="UI"]
+margin_top = 552.0
+margin_right = 640.0
+margin_bottom = 576.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI"]
+margin_top = 448.0
+margin_right = 640.0
+margin_bottom = 552.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 64, 64 )
