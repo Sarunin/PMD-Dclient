@@ -1,45 +1,85 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Sprites/pkmn_diagonal.png" type="Texture" id=1]
-[ext_resource path="res://Code/mvmnt.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/pkmn_straight.png" type="Texture" id=3]
+[ext_resource path="res://pkmn_char.tres" type="Texture" id=1]
+[ext_resource path="res://tiles.png" type="Texture" id=2]
+[ext_resource path="res://movement.gd" type="Script" id=3]
+[ext_resource path="res://Code/cmd_box.gd" type="Script" id=4]
+
+[sub_resource type="TileSet" id=1]
+0/name = "tiles.png 0"
+0/texture = ExtResource( 2 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 32, 32 )
+0/tile_mode = 2
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
 
 [node name="Node2D" type="Node2D"]
 
+[node name="TileMap" type="TileMap" parent="."]
+z_index = -1
+tile_set = SubResource( 1 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( 65533, 0, 65537, 65534, 0, 65537, 65535, 0, 65537, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 65536, 6, 0, 65536, 7, 0, 1, 131069, 0, 65537, 131070, 0, 65537, 131071, 0, 65537, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 65536, 65542, 0, 65536, 65543, 0, 1, 196605, 0, 65537, 196606, 0, 65537, 196607, 0, 65537, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, 131076, 0, 0, 131077, 0, 65536, 131078, 0, 65536, 131079, 0, 1, 262141, 0, 65537, 262142, 0, 65537, 262143, 0, 65537, 196608, 0, 0, 196609, 0, 0, 196610, 0, 0, 196611, 0, 0, 196612, 0, 0, 196613, 0, 65536, 196614, 0, 65536, 196615, 0, 1, 327676, 0, 65537, 327677, 0, 65537, 327678, 0, 65537, 327679, 0, 65537, 262144, 0, 0, 262145, 0, 0, 262146, 0, 0, 262147, 0, 0, 262148, 0, 0, 262149, 0, 65536, 262150, 0, 65536, 262151, 0, 1, 393212, 0, 65537, 393213, 0, 65537, 393214, 0, 65537, 393215, 0, 65537, 327680, 0, 65537, 327681, 0, 65537, 327682, 0, 1, 327683, 0, 65536, 327684, 0, 65536, 327685, 0, 65536, 327686, 0, 65536, 327687, 0, 1, 458749, 0, 65537, 458750, 0, 65537, 458751, 0, 65537, 393216, 0, 65537, 393217, 0, 65537, 393218, 0, 1, 393219, 0, 1, 393220, 0, 65536, 393221, 0, 65536, 393222, 0, 65536, 393223, 0, 1, 524285, 0, 65537, 524286, 0, 65537, 524287, 0, 65537, 458752, 0, 65537, 458753, 0, 65537, 458754, 0, 65537, 458755, 0, 1, 458756, 0, 1, 458757, 0, 1, 458758, 0, 1, 458759, 0, 1 )
+
 [node name="Player" type="Node2D" parent="."]
-script = ExtResource( 2 )
+position = Vector2( 96, 96 )
+script = ExtResource( 3 )
 
-[node name="pkmn_straight" type="Sprite" parent="Player"]
-scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 3 )
-centered = false
-
-[node name="pkmn_diagonal" type="Sprite" parent="Player"]
-visible = false
-scale = Vector2( 0.5, 0.5 )
+[node name="Sprite" type="Sprite" parent="Player"]
 texture = ExtResource( 1 )
 centered = false
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
-anchor_mode = 0
+offset = Vector2( 16, 16 )
+zoom = Vector2( 0.5, 0.5 )
 
-[node name="UI" type="Node2D" parent="."]
-
-[node name="LineEdit" type="LineEdit" parent="UI"]
-margin_top = 552.0
-margin_right = 640.0
-margin_bottom = 576.0
+[node name="UI" type="Control" parent="."]
+margin_right = 1280.0
+margin_bottom = 720.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="RichTextLabel" type="RichTextLabel" parent="UI"]
-margin_top = 448.0
-margin_right = 640.0
-margin_bottom = 552.0
+[node name="CCont" type="VBoxContainer" parent="UI"]
+margin_left = 96.0
+margin_top = 480.0
+margin_right = 608.0
+margin_bottom = 704.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Viewport" type="Viewport" parent="."]
-size = Vector2( 64, 64 )
+[node name="ChatLog" type="RichTextLabel" parent="UI/CCont"]
+margin_right = 512.0
+margin_bottom = 196.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CommandBox" type="LineEdit" parent="UI/CCont"]
+margin_top = 200.0
+margin_right = 512.0
+margin_bottom = 224.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

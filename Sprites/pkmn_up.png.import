@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pkmn_straight.png-6cd86bc8d0710e1e283a479eb3759b7a.stex"
+path="res://.import/pkmn_up.png-8bad2e53d901a9f4066ffc0517685332.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/pkmn_straight.png"
-dest_files=[ "res://.import/pkmn_straight.png-6cd86bc8d0710e1e283a479eb3759b7a.stex" ]
+source_file="res://Sprites/pkmn_up.png"
+dest_files=[ "res://.import/pkmn_up.png-8bad2e53d901a9f4066ffc0517685332.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

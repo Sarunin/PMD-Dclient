@@ -1,5 +1,6 @@
 extends Node2D
 
+
 var tile_size = 32
 var inputs = {
 	"ui_right": Vector2.RIGHT,
@@ -13,5 +14,4 @@ func _unhandled_input(event):
 			move(dir)
 			
 func move(dir):
-	position += inputs[dir] * tile_size
-
+	get_node(".").position += inputs[dir] * tile_size

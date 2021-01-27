@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pkmn_diagonal.png-8697420d7f018642fd75fc5ba483f1f1.stex"
+path="res://.import/pkmn_base.png-309eb2009ed25b35decc22a296ea7d24.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/pkmn_diagonal.png"
-dest_files=[ "res://.import/pkmn_diagonal.png-8697420d7f018642fd75fc5ba483f1f1.stex" ]
+source_file="res://pkmn_base.png"
+dest_files=[ "res://.import/pkmn_base.png-309eb2009ed25b35decc22a296ea7d24.stex" ]
 
 [params]
 
