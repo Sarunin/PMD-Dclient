@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Resources/console_box.tres" type="StyleBox" id=1]
 [ext_resource path="res://Resources/frame.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Code/cmd_box.gd" type="Script" id=4]
 [ext_resource path="res://Resources/console_theme.tres" type="Theme" id=5]
 [ext_resource path="res://MapScene.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Code/chat_log.gd" type="Script" id=7]
 
 [node name="Root" type="Node2D"]
 
@@ -37,6 +38,7 @@ theme = ExtResource( 5 )
 custom_styles/focus = ExtResource( 1 )
 bbcode_enabled = true
 scroll_following = true
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
