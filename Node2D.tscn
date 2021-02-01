@@ -1,18 +1,28 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://Resources/console_box.tres" type="StyleBox" id=1]
-[ext_resource path="res://Resources/frame.png" type="Texture" id=2]
-[ext_resource path="res://Resources/gen_atlas.tres" type="Texture" id=3]
+[ext_resource path="res://Resources/Themes/console_box.tres" type="StyleBox" id=1]
+[ext_resource path="res://Resources/Sprites/frame.png" type="Texture" id=2]
+[ext_resource path="res://Resources/Atlas/gen_atlas.tres" type="Texture" id=3]
 [ext_resource path="res://Code/cmd_box.gd" type="Script" id=4]
-[ext_resource path="res://Resources/console_theme.tres" type="Theme" id=5]
+[ext_resource path="res://Resources/Themes/console_theme.tres" type="Theme" id=5]
 [ext_resource path="res://MapScene.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Code/chat_log.gd" type="Script" id=7]
+[ext_resource path="res://Code/type_manager.gd" type="Script" id=8]
+[ext_resource path="res://Resources/Atlas/typeicons_atlastexture.tres" type="Texture" id=9]
+[ext_resource path="res://Resources/Atlas/typeicons2_atlastexture.tres" type="Texture" id=10]
+[ext_resource path="res://Resources/Themes/HPBar.tres" type="Theme" id=11]
+[ext_resource path="res://Resources/Sprites/HPbar_overlay.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Sprites/SPbar_overlay.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Themes/SPBar.tres" type="Theme" id=14]
+[ext_resource path="res://Resources/Themes/EXPBar.tres" type="Theme" id=15]
+[ext_resource path="res://Resources/Sprites/EXPbar_overlay.png" type="Texture" id=16]
+[ext_resource path="res://Code/pkmn_type_display.gd" type="Script" id=17]
 
 [node name="Root" type="Node2D"]
 
 [node name="UI" type="Control" parent="."]
-margin_top = 3.0
 margin_right = 1280.0
-margin_bottom = 723.0
+margin_bottom = 720.0
 theme = ExtResource( 5 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -30,24 +40,31 @@ __meta__ = {
 
 [node name="ChatLog" type="RichTextLabel" parent="UI/CCont"]
 margin_right = 637.0
-margin_bottom = 207.0
+margin_bottom = 203.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource( 5 )
 custom_styles/focus = ExtResource( 1 )
 bbcode_enabled = true
 scroll_following = true
+script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="CommandBox" type="LineEdit" parent="UI/CCont"]
-margin_top = 211.0
+margin_top = 205.0
 margin_right = 637.0
-margin_bottom = 236.0
+margin_bottom = 234.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TypeManager" type="Control" parent="UI/CCont"]
+margin_top = 236.0
+margin_right = 637.0
+margin_bottom = 236.0
+script = ExtResource( 8 )
 
 [node name="Map" type="ViewportContainer" parent="UI"]
 margin_left = 5.0
@@ -74,53 +91,202 @@ gui_disable_input = true
 
 [node name="MapScene" parent="UI/Map/Window" instance=ExtResource( 6 )]
 
-[node name="BasicInfo" type="PanelContainer" parent="UI"]
+[node name="CommonInfo" type="PanelContainer" parent="UI"]
 margin_left = 771.0
 margin_top = 4.0
-margin_right = 1276.0
-margin_bottom = 196.0
+margin_right = 1279.0
+margin_bottom = 202.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Image" type="PanelContainer" parent="UI/BasicInfo"]
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 131.0
-margin_bottom = 131.0
+[node name="Spliter" type="HBoxContainer" parent="UI/CommonInfo"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 505.0
+margin_bottom = 195.0
+
+[node name="PersonalInfo" type="VBoxContainer" parent="UI/CommonInfo/Spliter"]
+margin_right = 130.0
+margin_bottom = 192.0
+
+[node name="Image" type="PanelContainer" parent="UI/CommonInfo/Spliter/PersonalInfo"]
+margin_right = 130.0
+margin_bottom = 130.0
 rect_min_size = Vector2( 130, 130 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 
-[node name="Avatar" type="Sprite" parent="UI/BasicInfo/Image"]
+[node name="Avatar" type="Sprite" parent="UI/CommonInfo/Spliter/PersonalInfo/Image"]
 
-[node name="Species" type="Label" parent="UI/BasicInfo"]
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 106.0
-margin_bottom = 26.0
-rect_min_size = Vector2( 105, 0 )
+[node name="Species" type="Label" parent="UI/CommonInfo/Spliter/PersonalInfo"]
+margin_top = 132.0
+margin_right = 105.0
+margin_bottom = 161.0
+rect_min_size = Vector2( 105, 28 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Umbreon"
 align = 1
 
-[node name="Gender" type="Node2D" parent="UI/BasicInfo"]
-position = Vector2( 108, 135 )
+[node name="Gender" type="Node2D" parent="UI/CommonInfo/Spliter/PersonalInfo"]
+position = Vector2( 105, 132 )
 scale = Vector2( 0.125, 0.125 )
 
-[node name="GenderIco" type="Sprite" parent="UI/BasicInfo/Gender"]
+[node name="GenderIco" type="Sprite" parent="UI/CommonInfo/Spliter/PersonalInfo/Gender"]
+position = Vector2( 0, 16 )
 texture = ExtResource( 3 )
 centered = false
 
-[node name="Name" type="Label" parent="UI/BasicInfo"]
-margin_left = 1.0
-margin_top = 1.0
-margin_right = 42.0
-margin_bottom = 26.0
+[node name="Name" type="Label" parent="UI/CommonInfo/Spliter/PersonalInfo"]
+margin_top = 163.0
+margin_right = 130.0
+margin_bottom = 192.0
+rect_min_size = Vector2( 130, 28 )
 size_flags_horizontal = 0
 size_flags_vertical = 0
 text = "Petra"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BasicInfo" type="VBoxContainer" parent="UI/CommonInfo/Spliter"]
+margin_left = 132.0
+margin_right = 502.0
+margin_bottom = 192.0
+
+[node name="TypeBox" type="HBoxContainer" parent="UI/CommonInfo/Spliter/BasicInfo"]
+margin_right = 370.0
+margin_bottom = 64.0
+alignment = 2
+script = ExtResource( 17 )
+
+[node name="Type1" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/TypeBox"]
+texture = ExtResource( 9 )
+centered = false
+region_rect = Rect2( 0, 0, 64, 64 )
+
+[node name="Type2" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/TypeBox"]
+texture = ExtResource( 10 )
+centered = false
+offset = Vector2( 64, 0 )
+
+[node name="Types" type="Label" parent="UI/CommonInfo/Spliter/BasicInfo/TypeBox"]
+margin_left = 128.0
+margin_right = 370.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 242, 64 )
+size_flags_horizontal = 9
+size_flags_vertical = 1
+text = "Dark / Other"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="HP" type="Control" parent="UI/CommonInfo/Spliter/BasicInfo"]
+margin_top = 66.0
+margin_right = 370.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 370, 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HPOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/HP"]
+z_index = 1
+texture = ExtResource( 12 )
+centered = false
+
+[node name="HPBar" type="ProgressBar" parent="UI/CommonInfo/Spliter/BasicInfo/HP"]
+margin_right = 370.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 370, 30 )
+theme = ExtResource( 11 )
+value = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SP" type="Control" parent="UI/CommonInfo/Spliter/BasicInfo"]
+margin_top = 98.0
+margin_right = 370.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SPOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/SP"]
+z_index = 1
+texture = ExtResource( 13 )
+centered = false
+
+[node name="SPBar" type="ProgressBar" parent="UI/CommonInfo/Spliter/BasicInfo/SP"]
+margin_right = 370.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 30 )
+theme = ExtResource( 14 )
+value = 100.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exp" type="Control" parent="UI/CommonInfo/Spliter/BasicInfo"]
+margin_top = 130.0
+margin_right = 370.0
+margin_bottom = 161.0
+rect_min_size = Vector2( 0, 31 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExpOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/Exp"]
+z_index = 1
+texture = ExtResource( 16 )
+centered = false
+
+[node name="ExpBar" type="ProgressBar" parent="UI/CommonInfo/Spliter/BasicInfo/Exp"]
+margin_right = 370.0
+margin_bottom = 31.0
+rect_min_size = Vector2( 0, 31 )
+theme = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NumberStuff" type="HBoxContainer" parent="UI/CommonInfo/Spliter/BasicInfo"]
+margin_top = 163.0
+margin_right = 370.0
+margin_bottom = 192.0
+
+[node name="Level" type="Label" parent="UI/CommonInfo/Spliter/BasicInfo/NumberStuff"]
+margin_right = 80.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 80, 29 )
+size_flags_vertical = 2
+text = "Lvl:1"
+align = 1
+
+[node name="Money" type="Label" parent="UI/CommonInfo/Spliter/BasicInfo/NumberStuff"]
+margin_left = 82.0
+margin_right = 288.0
+margin_bottom = 29.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Money:999999$"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQLevel" type="Label" parent="UI/CommonInfo/Spliter/BasicInfo/NumberStuff"]
+margin_left = 290.0
+margin_right = 370.0
+margin_bottom = 29.0
+rect_min_size = Vector2( 80, 29 )
+size_flags_vertical = 2
+text = "IQ:1"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

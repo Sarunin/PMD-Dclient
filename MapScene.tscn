@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Code/SpriteScr.gd" type="Script" id=1]
-[ext_resource path="res://Resources/Tile_Set.tres" type="TileSet" id=2]
-[ext_resource path="res://Resources/pkmn_char.tres" type="Texture" id=3]
+[ext_resource path="res://Code/sprite_script.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Atlas/Tile_Set.tres" type="TileSet" id=2]
+[ext_resource path="res://Resources/Atlas/pkmn_char.tres" type="Texture" id=3]
+
 
 [node name="MapScene" type="Node2D"]
 
