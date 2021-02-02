@@ -1,7 +1,8 @@
-[gd_resource type="Theme" load_steps=2 format=2]
+[gd_resource type="Theme" load_steps=3 format=2]
 
 [ext_resource path="res://Resources/Themes/SPBar_texture.tres" type="StyleBox" id=1]
-
+[ext_resource path="res://Resources/FontFiles/aaaafont.tres" type="DynamicFont" id=2]
 
 [resource]
+default_font = ExtResource( 2 )
 ProgressBar/styles/fg = ExtResource( 1 )
