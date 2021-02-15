@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "PanelContainer",
+"class": "TurnOrderItem",
+"language": "GDScript",
+"path": "res://UI/TurnOrderItem.gd"
+} ]
 _global_script_class_icons={
-
+"TurnOrderItem": ""
 }
 
 [application]
@@ -23,7 +28,7 @@ run/main_scene="res://Node2D.tscn"
 window/size/width=1280
 window/size/height=720
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
+window/stretch/aspect="expand"
 
 [rendering]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://Resources/Themes/console_box.tres" type="StyleBox" id=1]
 [ext_resource path="res://Resources/Sprites/frame.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Resources/Sprites/textbox_frame.png" type="Texture" id=18]
 [ext_resource path="res://Resources/Themes/Lable_separator.tres" type="StyleBox" id=19]
 [ext_resource path="res://Resources/FontFiles/yhingfont.tres" type="DynamicFont" id=20]
+[ext_resource path="res://UI/TurnOrderList.tscn" type="PackedScene" id=21]
 
 [node name="Root" type="Node2D"]
 
@@ -113,11 +114,11 @@ __meta__ = {
 margin_left = 3.0
 margin_top = 3.0
 margin_right = 505.0
-margin_bottom = 221.0
+margin_bottom = 195.0
 
 [node name="PersonalInfo" type="VBoxContainer" parent="UI/CommonInfo/Spliter"]
 margin_right = 130.0
-margin_bottom = 218.0
+margin_bottom = 192.0
 
 [node name="Image" type="PanelContainer" parent="UI/CommonInfo/Spliter/PersonalInfo"]
 margin_right = 130.0
@@ -164,7 +165,7 @@ __meta__ = {
 [node name="BasicInfo" type="VBoxContainer" parent="UI/CommonInfo/Spliter"]
 margin_left = 132.0
 margin_right = 502.0
-margin_bottom = 218.0
+margin_bottom = 192.0
 
 [node name="TypeBox" type="HBoxContainer" parent="UI/CommonInfo/Spliter/BasicInfo"]
 margin_right = 370.0
@@ -312,7 +313,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PanelContainer" type="PanelContainer" parent="UI"]
+[node name="TurnOrder" type="PanelContainer" parent="UI"]
 margin_left = 643.0
 margin_top = 4.0
 margin_right = 766.0
@@ -320,6 +321,12 @@ margin_bottom = 683.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TurnOrderList" parent="UI/TurnOrder" instance=ExtResource( 21 )]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 120.0
+margin_bottom = 676.0
 
 [node name="Button" type="Button" parent="UI"]
 margin_left = 643.0
@@ -342,7 +349,6 @@ __meta__ = {
 }
 
 [node name="Stats" type="Control" parent="UI/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -1294,6 +1300,7 @@ margin_bottom = 5.0
 rect_min_size = Vector2( 2, 2 )
 
 [node name="Moves" type="Control" parent="UI/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
@@ -1813,8 +1820,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
 margin_top = 32.0
-margin_right = -465.0
-margin_bottom = -438.0
+margin_right = -3.0
+margin_bottom = -3.0
 
 [node name="Info" type="Control" parent="UI/TabContainer"]
 visible = false
@@ -1822,5 +1829,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 3.0
 margin_top = 32.0
-margin_right = -465.0
-margin_bottom = -438.0
+margin_right = -3.0
+margin_bottom = -3.0

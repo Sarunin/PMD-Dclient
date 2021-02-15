@@ -8,6 +8,7 @@ onready var HPbars = get_node("../CommonInfo/Spliter/BasicInfo/HP/HPBar")
 onready var SPbars = get_node("../CommonInfo/Spliter/BasicInfo/SP/SPBar")
 onready var EXPbars = get_node("../CommonInfo/Spliter/BasicInfo/Exp/ExpBar")
 onready var typeBox = get_node("../CommonInfo/Spliter/BasicInfo/TypeBox")
+onready var order_list = get_node("../TurnOrder/TurnOrderList")
 
 var args
 var bfr = ''
@@ -55,6 +56,7 @@ func text_entered(text):
 			"/setSPbar": fsetbar(SPbars ,args[1])
 			"/setEXPbar": fsetbar(EXPbars ,args[1])
 			"/settype": fsettype(args[1] ,args[2])
+			"/addOrder": add_item(args[1], args[2], args[3])
 			"/look": 
 				if args[1] != '':
 					chatLog.print(flook(args[1]))
@@ -124,6 +126,15 @@ func fsetbar(bar, value):
 func fsettype(type1, type2):
 	typeBox.typeIcoDisplay(type1, type2)
 	typeBox.typeNameDisplay(type1, type2)
+
+
+func add_item(name, hp, sp):
+	var item_data = {
+		"name": name,
+		"hp": hp,
+		"sp": sp,
+	}
+	order_list.add_last(item_data)
 
 
 func flook(dir):
