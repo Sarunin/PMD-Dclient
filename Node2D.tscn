@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Resources/Themes/console_box.tres" type="StyleBox" id=1]
 [ext_resource path="res://Resources/Sprites/frame.png" type="Texture" id=2]
@@ -21,6 +21,18 @@
 [ext_resource path="res://Resources/Themes/Lable_separator.tres" type="StyleBox" id=19]
 [ext_resource path="res://Resources/FontFiles/yhingfont.tres" type="DynamicFont" id=20]
 [ext_resource path="res://UI/TurnOrderList.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Resources/Shaders/Overlay.shader" type="Shader" id=22]
+[ext_resource path="res://Resources/Shaders/Map.shader" type="Shader" id=23]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 23 )
+shader_param/red_offset = Vector2( -0.003, 0 )
+shader_param/blue_offset = Vector2( 0.003, 0 )
+
+[sub_resource type="ShaderMaterial" id=3]
+shader = ExtResource( 22 )
+shader_param/scan_line_count = 80.0
+shader_param/speed = 0.02
 
 [node name="Root" type="Node2D"]
 
@@ -100,6 +112,19 @@ render_target_update_mode = 3
 gui_disable_input = true
 
 [node name="MapScene" parent="UI/Map/Window" instance=ExtResource( 6 )]
+
+[node name="MapShader" type="ColorRect" parent="UI/Map"]
+material = SubResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -5.0
+margin_top = -5.0
+margin_right = -5.0
+margin_bottom = -5.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="CommonInfo" type="PanelContainer" parent="UI"]
 margin_left = 768.0
@@ -219,7 +244,6 @@ __meta__ = {
 
 [node name="HPOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/HP"]
 modulate = Color( 0.8, 0.8, 0.8, 1 )
-z_index = 1
 texture = ExtResource( 12 )
 centered = false
 
@@ -246,7 +270,6 @@ __meta__ = {
 
 [node name="SPOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/SP"]
 modulate = Color( 0.8, 0.8, 0.8, 1 )
-z_index = 1
 texture = ExtResource( 13 )
 centered = false
 
@@ -272,7 +295,6 @@ __meta__ = {
 }
 
 [node name="ExpOverlay" type="Sprite" parent="UI/CommonInfo/Spliter/BasicInfo/Exp"]
-z_index = 1
 texture = ExtResource( 16 )
 centered = false
 
@@ -1831,3 +1853,15 @@ margin_left = 3.0
 margin_top = 32.0
 margin_right = -3.0
 margin_bottom = -3.0
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="UI"]
+copy_mode = 2
+
+[node name="Overlay" type="ColorRect" parent="UI"]
+material = SubResource( 3 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
