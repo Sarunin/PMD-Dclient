@@ -8,6 +8,7 @@ onready var HPbars = get_node("../CommonInfo/Spliter/BasicInfo/HP/HPBar")
 onready var SPbars = get_node("../CommonInfo/Spliter/BasicInfo/SP/SPBar")
 onready var EXPbars = get_node("../CommonInfo/Spliter/BasicInfo/Exp/ExpBar")
 onready var typeBox = get_node("../CommonInfo/Spliter/BasicInfo/TypeBox")
+onready var StatBox = get_node("../TabInfo/Stats/Menu/Change/ChangesBox")
 onready var order_list = get_node("../TurnOrder/TurnOrderList")
 
 var args
@@ -19,7 +20,12 @@ var cmdList = [
 		{'name': "/help", 'description': "shows list of avalible comands"},
 		{'name': '/look <direction>', 'description': 'changes player rotation in declared direction'},
 		{'name': "/move <direction>", 'description': "changes player position in declared direction"},
-		{'name': "/typelist", 'description': "lists types"}
+		{'name': "/typelist", 'description': "lists types"},
+		{'name': "/setHPbar <value>", 'description': "dev command"},
+		{'name': "/setSPbar <value>", 'description': "dev command"},
+		{'name': "/setEXPbar <value>", 'description': "dev command"},
+		{'name': "/settype <type1> <type2>", 'description': "dev command"},
+		{'name': "/setstatchange <statname> <value>", 'description': "dev command"}
 	]
 
 
@@ -56,6 +62,7 @@ func text_entered(text):
 			"/setSPbar": fsetbar(SPbars ,args[1])
 			"/setEXPbar": fsetbar(EXPbars ,args[1])
 			"/settype": fsettype(args[1] ,args[2])
+			"/setstatchange": fsetstat(args[1] ,args[2])
 			"/addOrder": add_item(args[1], args[2], args[3])
 			"/look": 
 				if args[1] != '':
@@ -126,6 +133,10 @@ func fsetbar(bar, value):
 func fsettype(type1, type2):
 	typeBox.typeIcoDisplay(type1, type2)
 	typeBox.typeNameDisplay(type1, type2)
+
+
+func fsetstat(statName, statValue):
+	StatBox.change(statName, statValue)
 
 
 func add_item(name, hp, sp):

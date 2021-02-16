@@ -1,6 +1,6 @@
 extends VBoxContainer
 
-const TurnOrderItemScene = preload("TurnOrderItem.tscn")
+const TurnOrderItemScene = preload("../UI/TurnOrderItem.tscn")
 
 var queue_order: Array
 
@@ -8,7 +8,7 @@ func update_list():
 	var i = 0
 	for n in get_children():
 		if not queue_order.has(n):
-			n.free_queue
+			n.free_queue # What this line is supposed to do?
 	for n in queue_order:
 		move_child(n, i)
 		i += 1
