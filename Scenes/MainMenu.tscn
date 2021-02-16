@@ -122,6 +122,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="BackBufferCopy" type="BackBufferCopy" parent="UI"]
+copy_mode = 2
+
 [node name="Overlay" type="ColorRect" parent="UI"]
 material = ExtResource( 4 )
 margin_left = -4.0

@@ -64,6 +64,7 @@ func text_entered(text):
 			"/settype": fsettype(args[1] ,args[2])
 			"/setstatchange": fsetstat(args[1] ,args[2])
 			"/addOrder": add_item(args[1], args[2], args[3])
+			"/cycle": cycle()
 			"/look": 
 				if args[1] != '':
 					chatLog.print(flook(args[1]))
@@ -146,6 +147,10 @@ func add_item(name, hp, sp):
 		"sp": sp,
 	}
 	order_list.add_last(item_data)
+
+
+func cycle():
+	order_list.cycle()
 
 
 func flook(dir):
