@@ -26,8 +26,6 @@
 [ext_resource path="res://UI/Stats.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Code/change_scene.gd" type="Script" id=25]
 
-
-
 [node name="Root" type="Node2D"]
 
 [node name="UI" type="Control" parent="."]

@@ -4,6 +4,7 @@ onready var inputField = get_node("./CommandBox")
 onready var chatLog = get_node("./ChatLog")
 onready var typeMng = get_node("./TypeManager")
 onready var player = get_node("../Map/Window/MapScene/Player")
+onready var MapScene = get_node("../Map/Window/MapScene")
 onready var HPbars = get_node("../CommonInfo/Spliter/BasicInfo/HP/HPBar")
 onready var SPbars = get_node("../CommonInfo/Spliter/BasicInfo/SP/SPBar")
 onready var EXPbars = get_node("../CommonInfo/Spliter/BasicInfo/Exp/ExpBar")
@@ -64,6 +65,7 @@ func text_entered(text):
 			"/settype": fsettype(args[1] ,args[2])
 			"/setstatchange": fsetstat(args[1] ,args[2])
 			"/addOrder": add_item(args[1], args[2], args[3])
+			"/setTerrain": set_terrain(args[1])
 			"/cycle": cycle()
 			"/look": 
 				if args[1] != '':
@@ -147,6 +149,22 @@ func add_item(name, hp, sp):
 		"sp": sp,
 	}
 	order_list.add_last(item_data)
+
+
+func set_terrain(terrain_str):
+	var terrain
+	match terrain_str:
+		"c":
+			terrain = MapScene.TerrainType.clear
+		"g":
+			terrain = MapScene.TerrainType.grass
+		"e":
+			terrain = MapScene.TerrainType.electric
+		"f":
+			terrain = MapScene.TerrainType.fairy
+		"p":
+			terrain = MapScene.TerrainType.psychic
+	MapScene.set_terrain(terrain)
 
 
 func cycle():
