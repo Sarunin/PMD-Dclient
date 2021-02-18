@@ -5,6 +5,7 @@ onready var chatLog = get_node("./ChatLog")
 onready var typeMng = get_node("./TypeManager")
 onready var player = get_node("../Map/Window/MapScene/Player")
 onready var MapScene = get_node("../Map/Window/MapScene")
+onready var fogElement = get_node("../Map/Window/MapScene/Player/CanvasLayer/Fog")
 onready var HPbars = get_node("../CommonInfo/Spliter/BasicInfo/HP/HPBar")
 onready var SPbars = get_node("../CommonInfo/Spliter/BasicInfo/SP/SPBar")
 onready var EXPbars = get_node("../CommonInfo/Spliter/BasicInfo/Exp/ExpBar")
@@ -153,9 +154,11 @@ func add_item(name, hp, sp):
 
 func set_terrain(terrain_str):
 	var terrain
+	fogElement.visible = true
 	match terrain_str:
 		"c":
 			terrain = MapScene.TerrainType.clear
+			fogElement.visible = false
 		"g":
 			terrain = MapScene.TerrainType.grass
 		"e":

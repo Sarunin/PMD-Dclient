@@ -9,7 +9,7 @@
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 5 )
-shader_param/color = Color( 0.482353, 0.807843, 0.321569, 1 )
+shader_param/color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 4 )
@@ -42,6 +42,7 @@ centered = false
 [node name="CanvasLayer" type="CanvasLayer" parent="Player"]
 
 [node name="Fog" type="ColorRect" parent="Player/CanvasLayer"]
+visible = false
 material = SubResource( 2 )
 anchor_right = 1.0
 anchor_bottom = 1.0
