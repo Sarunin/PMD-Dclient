@@ -21,9 +21,11 @@ const terrain_colors = {
 
 func set_terrain(terrain_type):
 	var terrain_color: Color
+	fog.visible = true
 	match terrain_type:
 		TerrainType.clear:
 			terrain_color = terrain_colors.clear
+			fog.visible = false
 		TerrainType.grass:
 			terrain_color = terrain_colors.grass
 		TerrainType.electric:
