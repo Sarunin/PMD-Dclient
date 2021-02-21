@@ -9,12 +9,36 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Status",
+"class": "MajorStatus",
+"language": "GDScript",
+"path": "res://code/game/major_status.gd"
+}, {
+"base": "Status",
+"class": "MinorStatus",
+"language": "GDScript",
+"path": "res://code/game/minor_status.gd"
+}, {
+"base": "Reference",
+"class": "MinorStatusList",
+"language": "GDScript",
+"path": "res://code/game/minor_status_list.gd"
+}, {
+"base": "Reference",
+"class": "Status",
+"language": "GDScript",
+"path": "res://code/game/status.gd"
+}, {
 "base": "PanelContainer",
 "class": "TurnOrderItem",
 "language": "GDScript",
 "path": "res://code/ui/turn_order_item.gd"
 } ]
 _global_script_class_icons={
+"MajorStatus": "",
+"MinorStatus": "",
+"MinorStatusList": "",
+"Status": "",
 "TurnOrderItem": ""
 }
 
