@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "PanelContainer",
 "class": "TurnOrderItem",
 "language": "GDScript",
-"path": "res://Code/TurnOrderItem.gd"
+"path": "res://code/ui/turn_order_item.gd"
 } ]
 _global_script_class_icons={
 "TurnOrderItem": ""
@@ -21,7 +21,7 @@ _global_script_class_icons={
 [application]
 
 config/name="PMD&Dclient"
-run/main_scene="res://Scenes/MainMenu.tscn"
+run/main_scene="res://scenes/scenes/MainMenu.tscn"
 
 [display]
 

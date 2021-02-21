@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=2]
+
+[ext_resource path="res://resources/shaders/overlay.shader" type="Shader" id=1]
+
+
+
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/scan_line_count = 30.0
+shader_param/speed = 0.019
