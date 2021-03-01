@@ -1,0 +1,304 @@
+{
+	"sheets": [
+		{
+			"name": "natures",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "Atk",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "Def",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "SAtk",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "SDef",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "Spd",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "loves"
+				},
+				{
+					"typeStr": "1",
+					"name": "hates",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"name": "Hardy",
+					"Atk": 1,
+					"Def": 1,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Rest",
+					"hates": "Spicy"
+				},
+				{
+					"name": "Lonely",
+					"Atk": 1.1,
+					"Def": 0.9,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Spicy",
+					"hates": "Sour"
+				},
+				{
+					"name": "Adamant",
+					"Atk": 1.1,
+					"Def": 1,
+					"SAtk": 0.9,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Spicy",
+					"hates": "Dry"
+				},
+				{
+					"name": "Naughty",
+					"Atk": 1.1,
+					"Def": 1,
+					"SAtk": 1,
+					"SDef": 0.9,
+					"Spd": 1,
+					"loves": "Spicy",
+					"hates": "Bitter"
+				},
+				{
+					"name": "Brave",
+					"Atk": 1.1,
+					"Def": 1,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 0.9,
+					"loves": "Spicy",
+					"hates": "Sweet"
+				},
+				{
+					"name": "Bold",
+					"Atk": 0.9,
+					"Def": 1.1,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Sour",
+					"hates": "Spicy"
+				},
+				{
+					"name": "Docile",
+					"Atk": 1,
+					"Def": 1,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Rest",
+					"hates": "Sour"
+				},
+				{
+					"name": "Imprish",
+					"Atk": 1,
+					"Def": 1.1,
+					"SAtk": 0.9,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Sour",
+					"hates": "Dry"
+				},
+				{
+					"name": "Lax",
+					"Atk": 1,
+					"Def": 1.1,
+					"SAtk": 1,
+					"SDef": 0.9,
+					"Spd": 1,
+					"loves": "Sour",
+					"hates": "Bitter"
+				},
+				{
+					"name": "Relaxed",
+					"Atk": 1,
+					"Def": 1.1,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 0.9,
+					"loves": "Sour",
+					"hates": "Sweet"
+				},
+				{
+					"name": "Modest",
+					"Atk": 0.9,
+					"Def": 0,
+					"SAtk": 1.1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Dry",
+					"hates": "Spicy"
+				},
+				{
+					"name": "Mild",
+					"Atk": 1,
+					"Def": 0.9,
+					"SAtk": 1.1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Dry",
+					"hates": "Sour"
+				},
+				{
+					"name": "Bashful",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Rest",
+					"hates": "Dry"
+				},
+				{
+					"name": "Rash",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1.1,
+					"SDef": 0.9,
+					"Spd": 1,
+					"loves": "Dry",
+					"hates": "Bitter"
+				},
+				{
+					"name": "Quiet",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1.1,
+					"SDef": 1,
+					"Spd": 0.9,
+					"loves": "Dry",
+					"hates": "Sweet"
+				},
+				{
+					"name": "Calm",
+					"Atk": 0.9,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1.1,
+					"Spd": 1,
+					"loves": "Bitter",
+					"hates": "Spicy"
+				},
+				{
+					"name": "Gentle",
+					"Atk": 1,
+					"Def": 0.9,
+					"SAtk": 1,
+					"SDef": 1.1,
+					"Spd": 1,
+					"loves": "Bitter",
+					"hates": "Sour"
+				},
+				{
+					"name": "Careful",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 0.9,
+					"SDef": 1.1,
+					"Spd": 1,
+					"loves": "Bitter",
+					"hates": "Dry"
+				},
+				{
+					"name": "Quirky",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Rest",
+					"hates": "Bitter"
+				},
+				{
+					"name": "Sassy",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1.1,
+					"Spd": 0.9,
+					"loves": "Bitter",
+					"hates": "Sweet"
+				},
+				{
+					"name": "Timid",
+					"Atk": 0.9,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1.1,
+					"loves": "Sweet",
+					"hates": "Spicy"
+				},
+				{
+					"name": "Hasty",
+					"Atk": 1,
+					"Def": 0.9,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1.1,
+					"loves": "Sweet",
+					"hates": "Sour"
+				},
+				{
+					"name": "Jolly",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 0.9,
+					"SDef": 1,
+					"Spd": 1.1,
+					"loves": "Sweet",
+					"hates": "Dry"
+				},
+				{
+					"name": "Naive",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 0.9,
+					"Spd": 1.1,
+					"loves": "Sweet",
+					"hates": "Bitter"
+				},
+				{
+					"name": "Serious",
+					"Atk": 1,
+					"Def": 0,
+					"SAtk": 1,
+					"SDef": 1,
+					"Spd": 1,
+					"loves": "Rest",
+					"hates": "Sweet"
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

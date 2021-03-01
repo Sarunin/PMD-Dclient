@@ -1,0 +1,194 @@
+{
+	"sheets": [
+		{
+			"name": "minorstatus",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "2",
+					"name": "isActive",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "maxTurns"
+				}
+			],
+			"lines": [
+				{
+					"name": "flinched",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "confused",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "taunded",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "infatuated",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "leeched",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "rooted",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "landed",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "protected",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "encored",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "embargoed",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "bounded",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "cursed",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "locked",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "heal_blocked",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "identified",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "nigthmare",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "perish",
+					"isActive": false,
+					"maxTurns": 3
+				},
+				{
+					"name": "telekinesis",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "aqua_ring",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "bracing",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "charging",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "attention",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "curled",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "magic_coat",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "rised",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "minimized",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "recharging",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "aimed",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "transformed",
+					"isActive": false,
+					"maxTurns": 0
+				},
+				{
+					"name": "withdrawing",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "drowsy",
+					"isActive": false,
+					"maxTurns": 1
+				},
+				{
+					"name": "sleepless",
+					"isActive": false,
+					"maxTurns": 5
+				},
+				{
+					"name": "focused",
+					"isActive": false,
+					"maxTurns": 1
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

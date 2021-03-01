@@ -1,0 +1,2462 @@
+{
+	"sheets": [
+		{
+			"name": "pokemon",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name_id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name_displayed"
+				},
+				{
+					"typeStr": "5:Sexless,M&B,F&B,All",
+					"name": "sex_group"
+				},
+				{
+					"typeStr": "5:none,bug,dark,dragon,electric,fairy,fighting,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water",
+					"name": "type1"
+				},
+				{
+					"typeStr": "5:none,bug,dark,dragon,electric,fairy,fighting,fire,flying,ghost,grass,ground,ice,normal,poison,psychic,rock,steel,water",
+					"name": "type2",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "abilities",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "HP",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "Atk",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "Def",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "SAtk",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "SDef",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "Spd"
+				},
+				{
+					"typeStr": "4",
+					"name": "Weight"
+				},
+				{
+					"typeStr": "8",
+					"name": "LearnSet",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"name_id": "grookey",
+					"name_displayed": "Grookey",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Overgrow"
+						},
+						{
+							"ability": "Grassy Surge"
+						}
+					],
+					"HP": 50,
+					"Atk": 65,
+					"Def": 50,
+					"SAtk": 40,
+					"SDef": 40,
+					"Spd": 65,
+					"Weight": 5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "thwackey",
+					"name_displayed": "Thwackey",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Overgrow"
+						},
+						{
+							"ability": "Grassy Surge"
+						}
+					],
+					"HP": 70,
+					"Atk": 85,
+					"Def": 70,
+					"SAtk": 55,
+					"SDef": 60,
+					"Spd": 80,
+					"Weight": 14,
+					"LearnSet": []
+				},
+				{
+					"name_id": "rillaboom",
+					"name_displayed": "Rillaboom",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Overgrow"
+						},
+						{
+							"ability": "Grassy Surge"
+						}
+					],
+					"HP": 100,
+					"Atk": 125,
+					"Def": 90,
+					"SAtk": 60,
+					"SDef": 70,
+					"Spd": 85,
+					"Weight": 90,
+					"LearnSet": []
+				},
+				{
+					"name_id": "scorbunny",
+					"name_displayed": "Scorbunny",
+					"sex_group": 3,
+					"type1": 7,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Blaze"
+						},
+						{
+							"ability": "Libero"
+						}
+					],
+					"HP": 50,
+					"Atk": 71,
+					"Def": 40,
+					"SAtk": 40,
+					"SDef": 40,
+					"Spd": 69,
+					"Weight": 4.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "raboot",
+					"name_displayed": "Raboot",
+					"sex_group": 3,
+					"type1": 7,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Blaze"
+						},
+						{
+							"ability": "Libero"
+						}
+					],
+					"HP": 65,
+					"Atk": 86,
+					"Def": 60,
+					"SAtk": 55,
+					"SDef": 60,
+					"Spd": 94,
+					"Weight": 9,
+					"LearnSet": []
+				},
+				{
+					"name_id": "cinderace",
+					"name_displayed": "Cinderace",
+					"sex_group": 3,
+					"type1": 7,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Blaze"
+						},
+						{
+							"ability": "Libero"
+						}
+					],
+					"HP": 80,
+					"Atk": 116,
+					"Def": 75,
+					"SAtk": 65,
+					"SDef": 75,
+					"Spd": 119,
+					"Weight": 33,
+					"LearnSet": []
+				},
+				{
+					"name_id": "sobble",
+					"name_displayed": "Sobble",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Torrent"
+						},
+						{
+							"ability": "Sniper"
+						}
+					],
+					"HP": 50,
+					"Atk": 40,
+					"Def": 40,
+					"SAtk": 70,
+					"SDef": 40,
+					"Spd": 70,
+					"Weight": 4,
+					"LearnSet": []
+				},
+				{
+					"name_id": "drizzile",
+					"name_displayed": "Drizzile",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Torrent"
+						},
+						{
+							"ability": "Sniper"
+						}
+					],
+					"HP": 65,
+					"Atk": 60,
+					"Def": 55,
+					"SAtk": 95,
+					"SDef": 55,
+					"Spd": 90,
+					"Weight": 11.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "inteleon",
+					"name_displayed": "Inteleon",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Torrent"
+						},
+						{
+							"ability": "Sniper"
+						}
+					],
+					"HP": 70,
+					"Atk": 85,
+					"Def": 65,
+					"SAtk": 125,
+					"SDef": 65,
+					"Spd": 120,
+					"Weight": 45.2,
+					"LearnSet": []
+				},
+				{
+					"name_id": "skwovet",
+					"name_displayed": "Skwovet",
+					"sex_group": 3,
+					"type1": 13,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Cheek Pouch"
+						},
+						{
+							"ability": "Gluttony"
+						}
+					],
+					"HP": 70,
+					"Atk": 55,
+					"Def": 55,
+					"SAtk": 35,
+					"SDef": 35,
+					"Spd": 25,
+					"Weight": 2.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "greedent",
+					"name_displayed": "Greedent",
+					"sex_group": 3,
+					"type1": 13,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Cheek Pouch"
+						},
+						{
+							"ability": "Gluttony"
+						}
+					],
+					"HP": 120,
+					"Atk": 95,
+					"Def": 95,
+					"SAtk": 55,
+					"SDef": 75,
+					"Spd": 20,
+					"Weight": 6,
+					"LearnSet": []
+				},
+				{
+					"name_id": "rookidee",
+					"name_displayed": "Rookidee",
+					"sex_group": 3,
+					"type1": 8,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Keen Eye"
+						},
+						{
+							"ability": "Unnerve"
+						},
+						{
+							"ability": "Big Pecks"
+						}
+					],
+					"HP": 38,
+					"Atk": 47,
+					"Def": 35,
+					"SAtk": 33,
+					"SDef": 35,
+					"Spd": 57,
+					"Weight": 1.8,
+					"LearnSet": []
+				},
+				{
+					"name_id": "corvisquire",
+					"name_displayed": "Corvisquire",
+					"sex_group": 3,
+					"type1": 8,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Keen Eye"
+						},
+						{
+							"ability": "Unnerve"
+						},
+						{
+							"ability": "Big Pecks"
+						}
+					],
+					"HP": 68,
+					"Atk": 67,
+					"Def": 55,
+					"SAtk": 43,
+					"SDef": 55,
+					"Spd": 77,
+					"Weight": 16,
+					"LearnSet": []
+				},
+				{
+					"name_id": "corviknight",
+					"name_displayed": "Corviknight",
+					"sex_group": 3,
+					"type1": 8,
+					"type2": 17,
+					"abilities": [
+						{
+							"ability": "Pressure"
+						},
+						{
+							"ability": "Unnerve"
+						},
+						{
+							"ability": "Mirror Armor"
+						}
+					],
+					"HP": 98,
+					"Atk": 87,
+					"Def": 105,
+					"SAtk": 53,
+					"SDef": 85,
+					"Spd": 67,
+					"Weight": 75,
+					"LearnSet": []
+				},
+				{
+					"name_id": "blipbug",
+					"name_displayed": "Blipbug",
+					"sex_group": 3,
+					"type1": 1,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Swarm"
+						},
+						{
+							"ability": "Compound Eyes"
+						},
+						{
+							"ability": "Telepathy"
+						}
+					],
+					"HP": 25,
+					"Atk": 20,
+					"Def": 20,
+					"SAtk": 25,
+					"SDef": 45,
+					"Spd": 45,
+					"Weight": 8,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dottler",
+					"name_displayed": "Dottler",
+					"sex_group": 3,
+					"type1": 1,
+					"type2": 15,
+					"abilities": [
+						{
+							"ability": "Swarm"
+						},
+						{
+							"ability": "Compound Eyes"
+						},
+						{
+							"ability": "Telepathy"
+						}
+					],
+					"HP": 50,
+					"Atk": 35,
+					"Def": 80,
+					"SAtk": 50,
+					"SDef": 90,
+					"Spd": 30,
+					"Weight": 19.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "orbeetle",
+					"name_displayed": "Orbeetle",
+					"sex_group": 3,
+					"type1": 1,
+					"type2": 15,
+					"abilities": [
+						{
+							"ability": "Swarm"
+						},
+						{
+							"ability": "Frisk"
+						},
+						{
+							"ability": "Telepathy"
+						}
+					],
+					"HP": 60,
+					"Atk": 45,
+					"Def": 110,
+					"SAtk": 80,
+					"SDef": 120,
+					"Spd": 90,
+					"Weight": 40.8,
+					"LearnSet": []
+				},
+				{
+					"name_id": "nickit",
+					"name_displayed": "Nickit",
+					"sex_group": 3,
+					"type1": 2,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Run Away"
+						},
+						{
+							"ability": "Unburden"
+						},
+						{
+							"ability": "Stakeout"
+						}
+					],
+					"HP": 40,
+					"Atk": 28,
+					"Def": 28,
+					"SAtk": 47,
+					"SDef": 52,
+					"Spd": 50,
+					"Weight": 8.9,
+					"LearnSet": []
+				},
+				{
+					"name_id": "thievul",
+					"name_displayed": "Thievul",
+					"sex_group": 3,
+					"type1": 2,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Run Away"
+						},
+						{
+							"ability": "Unburden"
+						},
+						{
+							"ability": "Stakeout"
+						}
+					],
+					"HP": 70,
+					"Atk": 58,
+					"Def": 58,
+					"SAtk": 87,
+					"SDef": 92,
+					"Spd": 90,
+					"Weight": 19.9,
+					"LearnSet": []
+				},
+				{
+					"name_id": "gossifleur",
+					"name_displayed": "Gossifleur",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Cotton Down"
+						},
+						{
+							"ability": "Regenerator"
+						},
+						{
+							"ability": "Effect Spore"
+						}
+					],
+					"HP": 40,
+					"Atk": 40,
+					"Def": 60,
+					"SAtk": 40,
+					"SDef": 60,
+					"Spd": 10,
+					"Weight": 2.2,
+					"LearnSet": []
+				},
+				{
+					"name_id": "eldegoss",
+					"name_displayed": "Eldegoss",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Cotton Down"
+						},
+						{
+							"ability": "Regenerator"
+						},
+						{
+							"ability": "Effect Spore"
+						}
+					],
+					"HP": 60,
+					"Atk": 50,
+					"Def": 90,
+					"SAtk": 80,
+					"SDef": 120,
+					"Spd": 60,
+					"Weight": 2.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "wooloo",
+					"name_displayed": "Wooloo",
+					"sex_group": 3,
+					"type1": 13,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Fluffy"
+						},
+						{
+							"ability": "Run Away"
+						},
+						{
+							"ability": "Bulletproof"
+						}
+					],
+					"HP": 42,
+					"Atk": 40,
+					"Def": 55,
+					"SAtk": 40,
+					"SDef": 45,
+					"Spd": 48,
+					"Weight": 6,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dubwool",
+					"name_displayed": "Dubwool",
+					"sex_group": 3,
+					"type1": 13,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Fluffy"
+						},
+						{
+							"ability": "Steadfast"
+						},
+						{
+							"ability": "Bulletproof"
+						}
+					],
+					"HP": 72,
+					"Atk": 80,
+					"Def": 100,
+					"SAtk": 60,
+					"SDef": 90,
+					"Spd": 88,
+					"Weight": 43,
+					"LearnSet": []
+				},
+				{
+					"name_id": "chewtle",
+					"name_displayed": "Chewtle",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Strong Jaw"
+						},
+						{
+							"ability": "Shell Armor"
+						},
+						{
+							"ability": "Swift Swim"
+						}
+					],
+					"HP": 50,
+					"Atk": 64,
+					"Def": 50,
+					"SAtk": 38,
+					"SDef": 38,
+					"Spd": 44,
+					"Weight": 8.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "drednaw",
+					"name_displayed": "Drednaw",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 16,
+					"abilities": [
+						{
+							"ability": "Strong Jaw"
+						},
+						{
+							"ability": "Shell Armor"
+						},
+						{
+							"ability": "Swift Swim"
+						}
+					],
+					"HP": 90,
+					"Atk": 115,
+					"Def": 90,
+					"SAtk": 48,
+					"SDef": 68,
+					"Spd": 74,
+					"Weight": 115.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "yamper",
+					"name_displayed": "Yamper",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Ball Fetch"
+						},
+						{
+							"ability": "Rattled"
+						}
+					],
+					"HP": 59,
+					"Atk": 45,
+					"Def": 50,
+					"SAtk": 40,
+					"SDef": 50,
+					"Spd": 26,
+					"Weight": 13.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "boltund",
+					"name_displayed": "Boltund",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Ball Fetch"
+						},
+						{
+							"ability": "Strong Jaw"
+						},
+						{
+							"ability": "Competitive"
+						}
+					],
+					"HP": 69,
+					"Atk": 90,
+					"Def": 60,
+					"SAtk": 90,
+					"SDef": 60,
+					"Spd": 121,
+					"Weight": 34,
+					"LearnSet": []
+				},
+				{
+					"name_id": "rolycoly",
+					"name_displayed": "Rolycoly",
+					"sex_group": 3,
+					"type1": 16,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Steam Engine"
+						},
+						{
+							"ability": "Heatproof"
+						},
+						{
+							"ability": "Flash Fire"
+						}
+					],
+					"HP": 30,
+					"Atk": 40,
+					"Def": 50,
+					"SAtk": 40,
+					"SDef": 50,
+					"Spd": 30,
+					"Weight": 12,
+					"LearnSet": []
+				},
+				{
+					"name_id": "carkol",
+					"name_displayed": "Carkol",
+					"sex_group": 3,
+					"type1": 16,
+					"type2": 7,
+					"abilities": [
+						{
+							"ability": "Steam Engine"
+						},
+						{
+							"ability": "Flame Body"
+						},
+						{
+							"ability": "Flash Fire"
+						}
+					],
+					"HP": 80,
+					"Atk": 60,
+					"Def": 90,
+					"SAtk": 60,
+					"SDef": 70,
+					"Spd": 50,
+					"Weight": 78,
+					"LearnSet": []
+				},
+				{
+					"name_id": "coalossal",
+					"name_displayed": "Coalossal",
+					"sex_group": 3,
+					"type1": 16,
+					"type2": 7,
+					"abilities": [
+						{
+							"ability": "Steam Engine"
+						},
+						{
+							"ability": "Flame Body"
+						},
+						{
+							"ability": "Flash Fire"
+						}
+					],
+					"HP": 110,
+					"Atk": 80,
+					"Def": 120,
+					"SAtk": 80,
+					"SDef": 90,
+					"Spd": 30,
+					"Weight": 310.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "applin",
+					"name_displayed": "Applin",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Ripen"
+						},
+						{
+							"ability": "Gluttony"
+						},
+						{
+							"ability": "Bulletproof"
+						}
+					],
+					"HP": 40,
+					"Atk": 40,
+					"Def": 80,
+					"SAtk": 40,
+					"SDef": 40,
+					"Spd": 20,
+					"Weight": 0.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "flapple",
+					"name_displayed": "Flapple",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Ripen"
+						},
+						{
+							"ability": "Gluttony"
+						},
+						{
+							"ability": "Hustle"
+						}
+					],
+					"HP": 70,
+					"Atk": 110,
+					"Def": 80,
+					"SAtk": 95,
+					"SDef": 60,
+					"Spd": 70,
+					"Weight": 1,
+					"LearnSet": []
+				},
+				{
+					"name_id": "appletun",
+					"name_displayed": "Appletun",
+					"sex_group": 3,
+					"type1": 10,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Ripen"
+						},
+						{
+							"ability": "Gluttony"
+						},
+						{
+							"ability": "Thick Fat"
+						}
+					],
+					"HP": 110,
+					"Atk": 85,
+					"Def": 80,
+					"SAtk": 100,
+					"SDef": 80,
+					"Spd": 30,
+					"Weight": 13,
+					"LearnSet": []
+				},
+				{
+					"name_id": "silicobra",
+					"name_displayed": "Silicobra",
+					"sex_group": 3,
+					"type1": 11,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sand Spit"
+						},
+						{
+							"ability": "Shed Skin"
+						},
+						{
+							"ability": "Sand Veil"
+						}
+					],
+					"HP": 52,
+					"Atk": 57,
+					"Def": 75,
+					"SAtk": 35,
+					"SDef": 50,
+					"Spd": 46,
+					"Weight": 7.6,
+					"LearnSet": []
+				},
+				{
+					"name_id": "sandaconda",
+					"name_displayed": "Sandaconda",
+					"sex_group": 3,
+					"type1": 11,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sand Spit"
+						},
+						{
+							"ability": "Shed Skin"
+						},
+						{
+							"ability": "Sand Veil"
+						}
+					],
+					"HP": 72,
+					"Atk": 107,
+					"Def": 127,
+					"SAtk": 65,
+					"SDef": 70,
+					"Spd": 71,
+					"Weight": 65.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "cramorant",
+					"name_displayed": "Cramorant",
+					"sex_group": 3,
+					"type1": 8,
+					"type2": 18,
+					"abilities": [
+						{
+							"ability": "Gulp Missile"
+						}
+					],
+					"HP": 70,
+					"Atk": 85,
+					"Def": 55,
+					"SAtk": 85,
+					"SDef": 95,
+					"Spd": 85,
+					"Weight": 18,
+					"LearnSet": []
+				},
+				{
+					"name_id": "arrokuda",
+					"name_displayed": "Arrokuda",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Swift Swim"
+						},
+						{
+							"ability": "Propeller Tail"
+						}
+					],
+					"HP": 41,
+					"Atk": 63,
+					"Def": 40,
+					"SAtk": 40,
+					"SDef": 30,
+					"Spd": 66,
+					"Weight": 1,
+					"LearnSet": []
+				},
+				{
+					"name_id": "barraskewda",
+					"name_displayed": "Barraskewda",
+					"sex_group": 3,
+					"type1": 18,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Swift Swim"
+						},
+						{
+							"ability": "Propeller Tail"
+						}
+					],
+					"HP": 61,
+					"Atk": 123,
+					"Def": 60,
+					"SAtk": 60,
+					"SDef": 50,
+					"Spd": 136,
+					"Weight": 30,
+					"LearnSet": []
+				},
+				{
+					"name_id": "toxel",
+					"name_displayed": "Toxel",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 14,
+					"abilities": [
+						{
+							"ability": "Rattled"
+						},
+						{
+							"ability": "Static"
+						},
+						{
+							"ability": "Klutz"
+						}
+					],
+					"HP": 40,
+					"Atk": 38,
+					"Def": 35,
+					"SAtk": 54,
+					"SDef": 35,
+					"Spd": 40,
+					"Weight": 11,
+					"LearnSet": []
+				},
+				{
+					"name_id": "toxtricity-amped",
+					"name_displayed": "Toxtricity",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 14,
+					"abilities": [
+						{
+							"ability": "Punk Rock"
+						},
+						{
+							"ability": "Plus"
+						},
+						{
+							"ability": "Technician"
+						}
+					],
+					"HP": 75,
+					"Atk": 98,
+					"Def": 70,
+					"SAtk": 114,
+					"SDef": 70,
+					"Spd": 75,
+					"Weight": 40,
+					"LearnSet": []
+				},
+				{
+					"name_id": "toxtricity-lowkey",
+					"name_displayed": "Toxtricity",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 14,
+					"abilities": [
+						{
+							"ability": "Punk Rock"
+						},
+						{
+							"ability": "Minus"
+						},
+						{
+							"ability": "Technician"
+						}
+					],
+					"HP": 75,
+					"Atk": 70,
+					"Def": 98,
+					"SAtk": 114,
+					"SDef": 70,
+					"Spd": 75,
+					"Weight": 40,
+					"LearnSet": []
+				},
+				{
+					"name_id": "sizzlipede",
+					"name_displayed": "Sizzlipede",
+					"sex_group": 3,
+					"type1": 7,
+					"type2": 1,
+					"abilities": [
+						{
+							"ability": "Flash Fire"
+						},
+						{
+							"ability": "White Smoke"
+						},
+						{
+							"ability": "Flame Body"
+						}
+					],
+					"HP": 50,
+					"Atk": 65,
+					"Def": 45,
+					"SAtk": 50,
+					"SDef": 50,
+					"Spd": 45,
+					"Weight": 1,
+					"LearnSet": []
+				},
+				{
+					"name_id": "centiskorch",
+					"name_displayed": "Centiskorch",
+					"sex_group": 3,
+					"type1": 7,
+					"type2": 1,
+					"abilities": [
+						{
+							"ability": "Flash Fire"
+						},
+						{
+							"ability": "White Smoke"
+						},
+						{
+							"ability": "Flame Body"
+						}
+					],
+					"HP": 100,
+					"Atk": 115,
+					"Def": 65,
+					"SAtk": 90,
+					"SDef": 90,
+					"Spd": 65,
+					"Weight": 120,
+					"LearnSet": []
+				},
+				{
+					"name_id": "clobbopus",
+					"name_displayed": "Clobbopus",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Limber"
+						},
+						{
+							"ability": "Technician"
+						}
+					],
+					"HP": 50,
+					"Atk": 68,
+					"Def": 60,
+					"SAtk": 50,
+					"SDef": 50,
+					"Spd": 32,
+					"Weight": 4,
+					"LearnSet": []
+				},
+				{
+					"name_id": "grapploct",
+					"name_displayed": "Grapploct",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Limber"
+						},
+						{
+							"ability": "Technician"
+						}
+					],
+					"HP": 80,
+					"Atk": 118,
+					"Def": 90,
+					"SAtk": 70,
+					"SDef": 80,
+					"Spd": 42,
+					"Weight": 39,
+					"LearnSet": []
+				},
+				{
+					"name_id": "sinistea",
+					"name_displayed": "Sinistea",
+					"sex_group": 0,
+					"type1": 9,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Weak Armor"
+						},
+						{
+							"ability": "Cursed Body"
+						}
+					],
+					"HP": 40,
+					"Atk": 45,
+					"Def": 45,
+					"SAtk": 74,
+					"SDef": 54,
+					"Spd": 50,
+					"Weight": 0.2,
+					"LearnSet": []
+				},
+				{
+					"name_id": "polteageist",
+					"name_displayed": "Polteageist",
+					"sex_group": 0,
+					"type1": 9,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Weak Armor"
+						},
+						{
+							"ability": "Cursed Body"
+						}
+					],
+					"HP": 60,
+					"Atk": 65,
+					"Def": 65,
+					"SAtk": 134,
+					"SDef": 114,
+					"Spd": 70,
+					"Weight": 0.4,
+					"LearnSet": []
+				},
+				{
+					"name_id": "hatenna",
+					"name_displayed": "Hatenna",
+					"sex_group": 2,
+					"type1": 15,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Healer"
+						},
+						{
+							"ability": "Anticipation"
+						},
+						{
+							"ability": "Magic Bounce"
+						}
+					],
+					"HP": 42,
+					"Atk": 30,
+					"Def": 45,
+					"SAtk": 56,
+					"SDef": 53,
+					"Spd": 39,
+					"Weight": 3.4,
+					"LearnSet": []
+				},
+				{
+					"name_id": "hattrem",
+					"name_displayed": "Hattrem",
+					"sex_group": 2,
+					"type1": 15,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Healer"
+						},
+						{
+							"ability": "Anticipation"
+						},
+						{
+							"ability": "Magic Bounce"
+						}
+					],
+					"HP": 57,
+					"Atk": 40,
+					"Def": 65,
+					"SAtk": 86,
+					"SDef": 73,
+					"Spd": 49,
+					"Weight": 4.8,
+					"LearnSet": []
+				},
+				{
+					"name_id": "hatterene",
+					"name_displayed": "hatterene",
+					"sex_group": 2,
+					"type1": 15,
+					"type2": 5,
+					"abilities": [
+						{
+							"ability": "Healer"
+						},
+						{
+							"ability": "Anticipation"
+						},
+						{
+							"ability": "Magic Bounce"
+						}
+					],
+					"HP": 57,
+					"Atk": 90,
+					"Def": 95,
+					"SAtk": 136,
+					"SDef": 103,
+					"Spd": 29,
+					"Weight": 5.1,
+					"LearnSet": []
+				},
+				{
+					"name_id": "impidimp",
+					"name_displayed": "Impidimp",
+					"sex_group": 1,
+					"type1": 2,
+					"type2": 5,
+					"abilities": [
+						{
+							"ability": "Prankster"
+						},
+						{
+							"ability": "Frisk"
+						},
+						{
+							"ability": "Pickpocket"
+						}
+					],
+					"HP": 45,
+					"Atk": 45,
+					"Def": 30,
+					"SAtk": 55,
+					"SDef": 40,
+					"Spd": 50,
+					"Weight": 5.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "morgrem",
+					"name_displayed": "Morgrem",
+					"sex_group": 1,
+					"type1": 2,
+					"type2": 5,
+					"abilities": [
+						{
+							"ability": "Prankster"
+						},
+						{
+							"ability": "Frisk"
+						},
+						{
+							"ability": "Pickpocket"
+						}
+					],
+					"HP": 65,
+					"Atk": 60,
+					"Def": 45,
+					"SAtk": 75,
+					"SDef": 55,
+					"Spd": 70,
+					"Weight": 12.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "grimmsnarl",
+					"name_displayed": "Grimmsnarl",
+					"sex_group": 1,
+					"type1": 2,
+					"type2": 5,
+					"abilities": [
+						{
+							"ability": "Prankster"
+						},
+						{
+							"ability": "Frisk"
+						},
+						{
+							"ability": "Pickpocket"
+						}
+					],
+					"HP": 95,
+					"Atk": 120,
+					"Def": 65,
+					"SAtk": 95,
+					"SDef": 75,
+					"Spd": 60,
+					"Weight": 61,
+					"LearnSet": []
+				},
+				{
+					"name_id": "obstagoon",
+					"name_displayed": "Obstagoon",
+					"sex_group": 3,
+					"type1": 2,
+					"type2": 13,
+					"abilities": [
+						{
+							"ability": "Reckless"
+						},
+						{
+							"ability": "Guts"
+						},
+						{
+							"ability": "Defiant"
+						}
+					],
+					"HP": 93,
+					"Atk": 90,
+					"Def": 101,
+					"SAtk": 60,
+					"SDef": 81,
+					"Spd": 95,
+					"Weight": 46,
+					"LearnSet": []
+				},
+				{
+					"name_id": "perrserker",
+					"name_displayed": "Perrserker",
+					"sex_group": 3,
+					"type1": 17,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Battle Armor"
+						},
+						{
+							"ability": "Tough Claws"
+						},
+						{
+							"ability": "Steely Spirit"
+						}
+					],
+					"HP": 70,
+					"Atk": 110,
+					"Def": 100,
+					"SAtk": 50,
+					"SDef": 60,
+					"Spd": 50,
+					"Weight": 28,
+					"LearnSet": []
+				},
+				{
+					"name_id": "cursola",
+					"name_displayed": "Cursola",
+					"sex_group": 3,
+					"type1": 9,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Weak Armor"
+						},
+						{
+							"ability": "Perish Body"
+						}
+					],
+					"HP": 60,
+					"Atk": 95,
+					"Def": 50,
+					"SAtk": 145,
+					"SDef": 130,
+					"Spd": 30,
+					"Weight": 0.4,
+					"LearnSet": []
+				},
+				{
+					"name_id": "sirfetchd",
+					"name_displayed": "Sirfetch'd",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Steadfast"
+						},
+						{
+							"ability": "Scrappy"
+						}
+					],
+					"HP": 62,
+					"Atk": 135,
+					"Def": 95,
+					"SAtk": 68,
+					"SDef": 82,
+					"Spd": 65,
+					"Weight": 117,
+					"LearnSet": []
+				},
+				{
+					"name_id": "mrrime",
+					"name_displayed": "Mr.Rime",
+					"sex_group": 3,
+					"type1": 12,
+					"type2": 15,
+					"abilities": [
+						{
+							"ability": "Tangled Feet"
+						},
+						{
+							"ability": "Screen Cleaner"
+						},
+						{
+							"ability": "Ice Body"
+						}
+					],
+					"HP": 80,
+					"Atk": 85,
+					"Def": 75,
+					"SAtk": 110,
+					"SDef": 100,
+					"Spd": 70,
+					"Weight": 58.2,
+					"LearnSet": []
+				},
+				{
+					"name_id": "runerigus",
+					"name_displayed": "Runerigus",
+					"sex_group": 3,
+					"type1": 11,
+					"type2": 9,
+					"abilities": [
+						{
+							"ability": "Wandering Spirit"
+						}
+					],
+					"HP": 58,
+					"Atk": 95,
+					"Def": 145,
+					"SAtk": 50,
+					"SDef": 105,
+					"Spd": 30,
+					"Weight": 66.6,
+					"LearnSet": []
+				},
+				{
+					"name_id": "milcery",
+					"name_displayed": "Milcery",
+					"sex_group": 2,
+					"type1": 5,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sweet Veil"
+						},
+						{
+							"ability": "Aroma Veil"
+						}
+					],
+					"HP": 45,
+					"Atk": 40,
+					"Def": 40,
+					"SAtk": 50,
+					"SDef": 61,
+					"Spd": 34,
+					"Weight": 0.3,
+					"LearnSet": []
+				},
+				{
+					"name_id": "alcremie",
+					"name_displayed": "Alcremie",
+					"sex_group": 2,
+					"type1": 5,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sweet Veil"
+						},
+						{
+							"ability": "Aroma Veil"
+						}
+					],
+					"HP": 65,
+					"Atk": 60,
+					"Def": 75,
+					"SAtk": 110,
+					"SDef": 121,
+					"Spd": 64,
+					"Weight": 0.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "falinks",
+					"name_displayed": "Falinks",
+					"sex_group": 0,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Battle Armor"
+						},
+						{
+							"ability": "Defiant"
+						}
+					],
+					"HP": 65,
+					"Atk": 100,
+					"Def": 100,
+					"SAtk": 70,
+					"SDef": 60,
+					"Spd": 75,
+					"Weight": 62,
+					"LearnSet": []
+				},
+				{
+					"name_id": "pincurchin",
+					"name_displayed": "Pincurchin",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Lightning Rod"
+						},
+						{
+							"ability": "Electric Surge"
+						}
+					],
+					"HP": 48,
+					"Atk": 101,
+					"Def": 95,
+					"SAtk": 91,
+					"SDef": 85,
+					"Spd": 15,
+					"Weight": 1,
+					"LearnSet": []
+				},
+				{
+					"name_id": "snom",
+					"name_displayed": "Snom",
+					"sex_group": 3,
+					"type1": 12,
+					"type2": 1,
+					"abilities": [
+						{
+							"ability": "Shield Dust"
+						},
+						{
+							"ability": "Ice Scales"
+						}
+					],
+					"HP": 30,
+					"Atk": 25,
+					"Def": 35,
+					"SAtk": 45,
+					"SDef": 30,
+					"Spd": 20,
+					"Weight": 3.8,
+					"LearnSet": []
+				},
+				{
+					"name_id": "frosmoth",
+					"name_displayed": "Frosmoth",
+					"sex_group": 3,
+					"type1": 12,
+					"type2": 1,
+					"abilities": [
+						{
+							"ability": "Shield Dust"
+						},
+						{
+							"ability": "Ice Scales"
+						}
+					],
+					"HP": 70,
+					"Atk": 65,
+					"Def": 60,
+					"SAtk": 125,
+					"SDef": 90,
+					"Spd": 65,
+					"Weight": 42,
+					"LearnSet": []
+				},
+				{
+					"name_id": "stonjourner",
+					"name_displayed": "Stonjourner",
+					"sex_group": 3,
+					"type1": 16,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Power Spot"
+						}
+					],
+					"HP": 100,
+					"Atk": 125,
+					"Def": 135,
+					"SAtk": 20,
+					"SDef": 20,
+					"Spd": 70,
+					"Weight": 520,
+					"LearnSet": []
+				},
+				{
+					"name_id": "eiscue-ice",
+					"name_displayed": "Eiscue",
+					"sex_group": 3,
+					"type1": 12,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Ice Face"
+						}
+					],
+					"HP": 75,
+					"Atk": 80,
+					"Def": 110,
+					"SAtk": 65,
+					"SDef": 90,
+					"Spd": 50,
+					"Weight": 89,
+					"LearnSet": []
+				},
+				{
+					"name_id": "eiscue-noice",
+					"name_displayed": "Eiscue",
+					"sex_group": 3,
+					"type1": 12,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Ice Face"
+						}
+					],
+					"HP": 75,
+					"Atk": 80,
+					"Def": 70,
+					"SAtk": 65,
+					"SDef": 50,
+					"Spd": 130,
+					"Weight": 89,
+					"LearnSet": []
+				},
+				{
+					"name_id": "indeedee-male",
+					"name_displayed": "Indeedee",
+					"sex_group": 1,
+					"type1": 15,
+					"type2": 13,
+					"abilities": [
+						{
+							"ability": "Inner Focus"
+						},
+						{
+							"ability": "Synchronize"
+						},
+						{
+							"ability": "Psychic Surge"
+						}
+					],
+					"HP": 60,
+					"Atk": 65,
+					"Def": 55,
+					"SAtk": 105,
+					"SDef": 95,
+					"Spd": 95,
+					"Weight": 28,
+					"LearnSet": []
+				},
+				{
+					"name_id": "indeedee-female",
+					"name_displayed": "Indeedee",
+					"sex_group": 2,
+					"type1": 15,
+					"type2": 13,
+					"abilities": [
+						{
+							"ability": "Own Tempo"
+						},
+						{
+							"ability": "Synchronize"
+						},
+						{
+							"ability": "Psychic Surge"
+						}
+					],
+					"HP": 70,
+					"Atk": 55,
+					"Def": 65,
+					"SAtk": 95,
+					"SDef": 105,
+					"Spd": 85,
+					"Weight": 28,
+					"LearnSet": []
+				},
+				{
+					"name_id": "morpeko-full",
+					"name_displayed": "Morpeko",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 2,
+					"abilities": [
+						{
+							"ability": "Hunger Switch"
+						}
+					],
+					"HP": 58,
+					"Atk": 95,
+					"Def": 58,
+					"SAtk": 70,
+					"SDef": 58,
+					"Spd": 97,
+					"Weight": 3,
+					"LearnSet": []
+				},
+				{
+					"name_id": "morpeko-hangry",
+					"name_displayed": "Morpeko",
+					"sex_group": 3,
+					"type1": 4,
+					"type2": 2,
+					"abilities": [
+						{
+							"ability": "Hunger Switch"
+						}
+					],
+					"HP": 58,
+					"Atk": 95,
+					"Def": 58,
+					"SAtk": 70,
+					"SDef": 58,
+					"Spd": 97,
+					"Weight": 3,
+					"LearnSet": []
+				},
+				{
+					"name_id": "cufant",
+					"name_displayed": "Cufant",
+					"sex_group": 3,
+					"type1": 17,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sheer Force"
+						},
+						{
+							"ability": "Heavy Metal"
+						}
+					],
+					"HP": 72,
+					"Atk": 80,
+					"Def": 49,
+					"SAtk": 40,
+					"SDef": 49,
+					"Spd": 40,
+					"Weight": 100,
+					"LearnSet": []
+				},
+				{
+					"name_id": "copperajah",
+					"name_displayed": "Copperajah",
+					"sex_group": 3,
+					"type1": 17,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Sheer Force"
+						},
+						{
+							"ability": "Heavy Metal"
+						}
+					],
+					"HP": 122,
+					"Atk": 130,
+					"Def": 69,
+					"SAtk": 80,
+					"SDef": 69,
+					"Spd": 30,
+					"Weight": 650,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dragozolt",
+					"name_displayed": "Dracozolt",
+					"sex_group": 0,
+					"type1": 4,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Volt Absorb"
+						},
+						{
+							"ability": "Hustle"
+						},
+						{
+							"ability": "Sand Rush"
+						}
+					],
+					"HP": 90,
+					"Atk": 100,
+					"Def": 90,
+					"SAtk": 80,
+					"SDef": 70,
+					"Spd": 75,
+					"Weight": 190,
+					"LearnSet": []
+				},
+				{
+					"name_id": "arctozolt",
+					"name_displayed": "Arctozolt",
+					"sex_group": 0,
+					"type1": 4,
+					"type2": 12,
+					"abilities": [
+						{
+							"ability": "Volt Absorb"
+						},
+						{
+							"ability": "Static"
+						},
+						{
+							"ability": "Slush Rush"
+						}
+					],
+					"HP": 90,
+					"Atk": 100,
+					"Def": 90,
+					"SAtk": 90,
+					"SDef": 80,
+					"Spd": 55,
+					"Weight": 150,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dracovish",
+					"name_displayed": "Dracovish",
+					"sex_group": 0,
+					"type1": 18,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Water Absorb"
+						},
+						{
+							"ability": "Strong Jaw"
+						},
+						{
+							"ability": "Sand Rush"
+						}
+					],
+					"HP": 90,
+					"Atk": 90,
+					"Def": 100,
+					"SAtk": 70,
+					"SDef": 80,
+					"Spd": 75,
+					"Weight": 215,
+					"LearnSet": []
+				},
+				{
+					"name_id": "arctovish",
+					"name_displayed": "Arctovish",
+					"sex_group": 0,
+					"type1": 18,
+					"type2": 12,
+					"abilities": [
+						{
+							"ability": "Water Absorb"
+						},
+						{
+							"ability": "Ice Body"
+						},
+						{
+							"ability": "Slush Rush"
+						}
+					],
+					"HP": 90,
+					"Atk": 90,
+					"Def": 100,
+					"SAtk": 80,
+					"SDef": 90,
+					"Spd": 55,
+					"Weight": 175,
+					"LearnSet": []
+				},
+				{
+					"name_id": "duraludon",
+					"name_displayed": "Duraludon",
+					"sex_group": 3,
+					"type1": 17,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Light Metal"
+						},
+						{
+							"ability": "Heavy Metal"
+						},
+						{
+							"ability": "Stalwart"
+						}
+					],
+					"HP": 70,
+					"Atk": 95,
+					"Def": 115,
+					"SAtk": 120,
+					"SDef": 50,
+					"Spd": 85,
+					"Weight": 40,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dreepy",
+					"name_displayed": "Dreepy",
+					"sex_group": 3,
+					"type1": 3,
+					"type2": 9,
+					"abilities": [
+						{
+							"ability": "Clear Body"
+						},
+						{
+							"ability": "Infiltrator"
+						},
+						{
+							"ability": "Cursed Body"
+						}
+					],
+					"HP": 28,
+					"Atk": 60,
+					"Def": 30,
+					"SAtk": 40,
+					"SDef": 30,
+					"Spd": 82,
+					"Weight": 2,
+					"LearnSet": []
+				},
+				{
+					"name_id": "drakloak",
+					"name_displayed": "Drakloak",
+					"sex_group": 3,
+					"type1": 3,
+					"type2": 9,
+					"abilities": [
+						{
+							"ability": "Clear Body"
+						},
+						{
+							"ability": "Infiltrator"
+						},
+						{
+							"ability": "Cursed Body"
+						}
+					],
+					"HP": 68,
+					"Atk": 80,
+					"Def": 50,
+					"SAtk": 60,
+					"SDef": 50,
+					"Spd": 102,
+					"Weight": 11,
+					"LearnSet": []
+				},
+				{
+					"name_id": "dragapult",
+					"name_displayed": "Dragapult",
+					"sex_group": 3,
+					"type1": 3,
+					"type2": 9,
+					"abilities": [
+						{
+							"ability": "Clear Body"
+						},
+						{
+							"ability": "Infiltrator"
+						},
+						{
+							"ability": "Cursed Body"
+						}
+					],
+					"HP": 88,
+					"Atk": 120,
+					"Def": 75,
+					"SAtk": 100,
+					"SDef": 75,
+					"Spd": 142,
+					"Weight": 50,
+					"LearnSet": []
+				},
+				{
+					"name_id": "zacian-doggo",
+					"name_displayed": "Zacian",
+					"sex_group": 0,
+					"type1": 5,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Intrepid Sword"
+						}
+					],
+					"HP": 92,
+					"Atk": 130,
+					"Def": 115,
+					"SAtk": 80,
+					"SDef": 115,
+					"Spd": 138,
+					"Weight": 110,
+					"LearnSet": []
+				},
+				{
+					"name_id": "zacian-sword",
+					"name_displayed": "Zacian",
+					"sex_group": 0,
+					"type1": 5,
+					"type2": 17,
+					"abilities": [
+						{
+							"ability": "Intrepid Sword"
+						}
+					],
+					"HP": 92,
+					"Atk": 170,
+					"Def": 115,
+					"SAtk": 80,
+					"SDef": 115,
+					"Spd": 148,
+					"Weight": 355,
+					"LearnSet": []
+				},
+				{
+					"name_id": "zamazenta-doggo",
+					"name_displayed": "Zamazenta",
+					"sex_group": 0,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Dauntless Shield"
+						}
+					],
+					"HP": 92,
+					"Atk": 130,
+					"Def": 115,
+					"SAtk": 80,
+					"SDef": 115,
+					"Spd": 138,
+					"Weight": 210,
+					"LearnSet": []
+				},
+				{
+					"name_id": "zamazenta-shield",
+					"name_displayed": "Zamazenta",
+					"sex_group": 0,
+					"type1": 6,
+					"type2": 17,
+					"abilities": [
+						{
+							"ability": "Dauntless Shield"
+						}
+					],
+					"HP": 92,
+					"Atk": 130,
+					"Def": 145,
+					"SAtk": 80,
+					"SDef": 145,
+					"Spd": 128,
+					"Weight": 785,
+					"LearnSet": []
+				},
+				{
+					"name_id": "eternatus",
+					"name_displayed": "Eternatus",
+					"sex_group": 0,
+					"type1": 14,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Pressure"
+						}
+					],
+					"HP": 140,
+					"Atk": 85,
+					"Def": 95,
+					"SAtk": 145,
+					"SDef": 95,
+					"Spd": 130,
+					"Weight": 950,
+					"LearnSet": []
+				},
+				{
+					"name_id": "eternatus-eternamax",
+					"name_displayed": "Eternatus",
+					"sex_group": 0,
+					"type1": 14,
+					"type2": 3,
+					"abilities": [
+						{
+							"ability": "Pressure"
+						}
+					],
+					"HP": 255,
+					"Atk": 115,
+					"Def": 250,
+					"SAtk": 125,
+					"SDef": 250,
+					"Spd": 130,
+					"Weight": 5000,
+					"LearnSet": []
+				},
+				{
+					"name_id": "kubfu",
+					"name_displayed": "Kubfu",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Inner Focus"
+						}
+					],
+					"HP": 60,
+					"Atk": 90,
+					"Def": 60,
+					"SAtk": 53,
+					"SDef": 50,
+					"Spd": 72,
+					"Weight": 12,
+					"LearnSet": []
+				},
+				{
+					"name_id": "urshifu-single",
+					"name_displayed": "Urshifu",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 2,
+					"abilities": [
+						{
+							"ability": "Unseen Fist"
+						}
+					],
+					"HP": 100,
+					"Atk": 130,
+					"Def": 100,
+					"SAtk": 63,
+					"SDef": 60,
+					"Spd": 97,
+					"Weight": 105,
+					"LearnSet": []
+				},
+				{
+					"name_id": "urshifu-rapid",
+					"name_displayed": "Urshifu",
+					"sex_group": 3,
+					"type1": 6,
+					"type2": 18,
+					"abilities": [
+						{
+							"ability": "Unseen Fist"
+						}
+					],
+					"HP": 100,
+					"Atk": 130,
+					"Def": 100,
+					"SAtk": 63,
+					"SDef": 60,
+					"Spd": 97,
+					"Weight": 105,
+					"LearnSet": []
+				},
+				{
+					"name_id": "zarude",
+					"name_displayed": "Zarude",
+					"sex_group": 0,
+					"type1": 2,
+					"type2": 10,
+					"abilities": [
+						{
+							"ability": "Leaf Guard"
+						}
+					],
+					"HP": 105,
+					"Atk": 120,
+					"Def": 105,
+					"SAtk": 70,
+					"SDef": 95,
+					"Spd": 105,
+					"Weight": 70,
+					"LearnSet": []
+				},
+				{
+					"name_id": "regieleki",
+					"name_displayed": "Regieleki",
+					"sex_group": 0,
+					"type1": 4,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Transistor"
+						}
+					],
+					"HP": 80,
+					"Atk": 100,
+					"Def": 50,
+					"SAtk": 100,
+					"SDef": 50,
+					"Spd": 200,
+					"Weight": 145,
+					"LearnSet": []
+				},
+				{
+					"name_id": "regidrago",
+					"name_displayed": "Regidrago",
+					"sex_group": 0,
+					"type1": 3,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Dragon's Maw"
+						}
+					],
+					"HP": 200,
+					"Atk": 100,
+					"Def": 50,
+					"SAtk": 100,
+					"SDef": 50,
+					"Spd": 80,
+					"Weight": 200,
+					"LearnSet": []
+				},
+				{
+					"name_id": "glastrier",
+					"name_displayed": "Glastrier",
+					"sex_group": 0,
+					"type1": 12,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Chilling Neigh"
+						}
+					],
+					"HP": 100,
+					"Atk": 145,
+					"Def": 130,
+					"SAtk": 65,
+					"SDef": 110,
+					"Spd": 30,
+					"Weight": 800,
+					"LearnSet": []
+				},
+				{
+					"name_id": "spectrier",
+					"name_displayed": "Spectrier",
+					"sex_group": 0,
+					"type1": 9,
+					"type2": 0,
+					"abilities": [
+						{
+							"ability": "Grim Neigh"
+						}
+					],
+					"HP": 100,
+					"Atk": 65,
+					"Def": 60,
+					"SAtk": 145,
+					"SDef": 80,
+					"Spd": 130,
+					"Weight": 44.5,
+					"LearnSet": []
+				},
+				{
+					"name_id": "calyrex",
+					"name_displayed": "Calyrex",
+					"sex_group": 0,
+					"type1": 15,
+					"type2": 10,
+					"abilities": [
+						{
+							"ability": "Unnerve"
+						}
+					],
+					"HP": 100,
+					"Atk": 80,
+					"Def": 80,
+					"SAtk": 80,
+					"SDef": 80,
+					"Spd": 80,
+					"Weight": 7.7,
+					"LearnSet": []
+				},
+				{
+					"name_id": "calyrex-ice",
+					"name_displayed": "CalyRider",
+					"sex_group": 0,
+					"type1": 15,
+					"type2": 12,
+					"abilities": [
+						{
+							"ability": "Unnerve"
+						},
+						{
+							"ability": "Chilling Neigh"
+						},
+						{
+							"ability": "As One"
+						}
+					],
+					"HP": 200,
+					"Atk": 225,
+					"Def": 210,
+					"SAtk": 145,
+					"SDef": 190,
+					"Spd": 30,
+					"Weight": 807.7,
+					"LearnSet": []
+				},
+				{
+					"name_id": "calyrex-shadow",
+					"name_displayed": "CalyRider",
+					"sex_group": 0,
+					"type1": 15,
+					"type2": 9,
+					"abilities": [
+						{
+							"ability": "Unnerve"
+						},
+						{
+							"ability": "Grim Neigh"
+						},
+						{
+							"ability": "As One"
+						}
+					],
+					"HP": 200,
+					"Atk": 145,
+					"Def": 140,
+					"SAtk": 225,
+					"SDef": 160,
+					"Spd": 130,
+					"Weight": 52.2,
+					"LearnSet": []
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "pokemon@abilities",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "ability",
+					"display": null
+				}
+			]
+		},
+		{
+			"name": "pokemon@LearnSet",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": []
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}
