@@ -1,10 +1,18 @@
 extends Node2D
 
 
+signal died
+signal moved(last_pos, new_pos)
+
+
+
 var max_HP: int
 var HP: int setget HP_set, HP_get
 var max_SP: int = 100
 var SP: int setget SP_set, SP_get
+
+var level: int = 0
+
 
 var major_status setget major_status_set, major_status_get
 var minor_statuses: MinorStatusList
@@ -43,7 +51,8 @@ func major_status_get():
 
 
 func _on_death():
-	pass
+	emit_signal("died")
+
 
 
 func _on_SP_overflow():

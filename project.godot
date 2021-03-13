@@ -47,6 +47,10 @@ _global_script_class_icons={
 config/name="PMD&Dclient"
 run/main_scene="res://scenes/scenes/MainMenu.tscn"
 
+[autoload]
+
+DatabaseManager="*res://code/extra/database_manager.gd"
+
 [display]
 
 window/size/width=1280

@@ -1,0 +1,52 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends HBoxContainer
+
+var value: int = 0 setget value_set, value_get
+
+onready var label = $Label
+onready var value_label = $Value
+
+
+func value_set(new_value):
+	value_label.text = String(new_value)
+	value = new_value
+
+
+func value_get():
+	return value
+"
+
+[node name="LabelValuePair" type="HBoxContainer"]
+margin_left = -1.0
+margin_top = 1.0
+margin_right = 151.0
+margin_bottom = 41.0
+alignment = 1
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 13.0
+margin_top = 13.0
+margin_right = 79.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 66, 0 )
+size_flags_stretch_ratio = 5.0
+text = "Label"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Value" type="Label" parent="."]
+margin_left = 83.0
+margin_top = 13.0
+margin_right = 139.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 56, 0 )
+text = "0"
+align = 1

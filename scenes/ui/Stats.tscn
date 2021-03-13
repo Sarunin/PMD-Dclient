@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://resources/Themes/Lable_separator.tres" type="StyleBox" id=1]
 [ext_resource path="res://resources/FontFiles/yhingfont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://code/ui/stat_changes.gd" type="Script" id=3]
-
-
-
+[ext_resource path="res://scenes/ui/snippets/LabelValuePair.tscn" type="PackedScene" id=4]
+[ext_resource path="res://code/ui/stats_stats.gd" type="Script" id=11]
+[ext_resource path="res://code/ui/stats.gd" type="Script" id=12]
 
 [node name="Stats" type="Control"]
 anchor_right = 1.0
@@ -14,6 +14,7 @@ margin_left = 3.0
 margin_top = 32.0
 margin_right = -3.0
 margin_bottom = -3.0
+script = ExtResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -96,6 +97,8 @@ margin_bottom = 196.0
 [node name="Stats" type="VBoxContainer" parent="Menu/BaseBox"]
 margin_right = 126.0
 margin_bottom = 123.0
+size_flags_horizontal = 3
+script = ExtResource( 11 )
 
 [node name="LabelStats" type="Label" parent="Menu/BaseBox/Stats"]
 margin_right = 126.0
@@ -107,10 +110,125 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="StatsValues" type="HBoxContainer" parent="Menu/BaseBox/Stats"]
+[node name="Hp" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
 margin_top = 19.0
 margin_right = 126.0
+margin_bottom = 33.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/Hp" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "HP"
+
+[node name="Value" parent="Menu/BaseBox/Stats/Hp" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="Atk" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_top = 37.0
+margin_right = 126.0
+margin_bottom = 51.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/Atk" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "ATK"
+
+[node name="Value" parent="Menu/BaseBox/Stats/Atk" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="Def" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_top = 55.0
+margin_right = 126.0
+margin_bottom = 69.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/Def" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "DEF"
+
+[node name="Value" parent="Menu/BaseBox/Stats/Def" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="SAtk" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_top = 73.0
+margin_right = 126.0
+margin_bottom = 87.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/SAtk" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "S.ATK"
+
+[node name="Value" parent="Menu/BaseBox/Stats/SAtk" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="SDef" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_top = 91.0
+margin_right = 126.0
+margin_bottom = 105.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/SDef" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "S.DEF"
+
+[node name="Value" parent="Menu/BaseBox/Stats/SDef" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="Spd" parent="Menu/BaseBox/Stats" instance=ExtResource( 4 )]
+margin_left = 0.0
+margin_top = 109.0
+margin_right = 126.0
 margin_bottom = 123.0
+
+[node name="Label" parent="Menu/BaseBox/Stats/Spd" index="0"]
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 66.0
+margin_bottom = 14.0
+text = "SPD"
+
+[node name="Value" parent="Menu/BaseBox/Stats/Spd" index="1"]
+margin_left = 70.0
+margin_top = 0.0
+margin_right = 126.0
+margin_bottom = 14.0
+
+[node name="StatsValues" type="HBoxContainer" parent="Menu/BaseBox/Stats"]
+visible = false
+margin_top = 91.0
+margin_right = 126.0
+margin_bottom = 195.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -219,6 +337,7 @@ margin_left = 130.0
 margin_right = 372.0
 margin_bottom = 123.0
 size_flags_horizontal = 3
+size_flags_stretch_ratio = 3.0
 
 [node name="Label" type="Label" parent="Menu/BaseBox/Nature&Other"]
 margin_right = 242.0
@@ -375,6 +494,7 @@ align = 1
 margin_left = 376.0
 margin_right = 502.0
 margin_bottom = 123.0
+size_flags_horizontal = 3
 
 [node name="LabelStats" type="Label" parent="Menu/BaseBox/Presence"]
 margin_right = 126.0
@@ -653,3 +773,15 @@ margin_right = 181.0
 margin_bottom = 68.0
 text = "• • • • • •"
 align = 1
+
+[editable path="Menu/BaseBox/Stats/Hp"]
+
+[editable path="Menu/BaseBox/Stats/Atk"]
+
+[editable path="Menu/BaseBox/Stats/Def"]
+
+[editable path="Menu/BaseBox/Stats/SAtk"]
+
+[editable path="Menu/BaseBox/Stats/SDef"]
+
+[editable path="Menu/BaseBox/Stats/Spd"]

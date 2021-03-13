@@ -28,14 +28,6 @@
 [ext_resource path="res://resources/Themes/console_menu_theme.tres" type="Theme" id=26]
 [ext_resource path="res://code/ui/pause_scene.gd" type="Script" id=27]
 
-
-
-
-
-
-
-
-
 [node name="Root" type="Node2D"]
 
 [node name="UI" type="Control" parent="."]
@@ -450,6 +442,7 @@ __meta__ = {
 }
 
 [node name="Stats" parent="UI/TabInfo" instance=ExtResource( 24 )]
+test_name = "umbreon"
 
 [node name="IQ\'s" type="Control" parent="UI/TabInfo"]
 visible = false
@@ -1369,6 +1362,8 @@ copy_mode = 2
 material = ExtResource( 5 )
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_top = -1.16635
+margin_bottom = -1.16638
 mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
