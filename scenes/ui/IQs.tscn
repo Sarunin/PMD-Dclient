@@ -1,0 +1,308 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resources/Themes/Lable_separator.tres" type="StyleBox" id=1]
+
+[node name="IQ\'s" type="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 32.0
+margin_right = -3.0
+margin_bottom = -3.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 502.0
+margin_bottom = 365.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQstats" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 502.0
+margin_bottom = 24.0
+
+[node name="IQLevel" type="Label" parent="VBoxContainer/IQstats"]
+margin_right = 250.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+custom_styles/normal = ExtResource( 1 )
+text = "-- IQ Level: 1 --"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQExp" type="Label" parent="VBoxContainer/IQstats"]
+margin_left = 252.0
+margin_right = 502.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+custom_styles/normal = ExtResource( 1 )
+text = "-- IQ Exp: 20 / 100 --"
+align = 1
+
+[node name="StartingIQ" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 26.0
+margin_right = 502.0
+margin_bottom = 117.0
+
+[node name="TaughtIQ" type="VBoxContainer" parent="VBoxContainer/StartingIQ"]
+margin_right = 250.0
+margin_bottom = 91.0
+size_flags_horizontal = 3
+
+[node name="IQskil1" type="Label" parent="VBoxContainer/StartingIQ/TaughtIQ"]
+margin_right = 250.0
+margin_bottom = 29.0
+text = "- text -"
+align = 1
+
+[node name="IQskil2" type="Label" parent="VBoxContainer/StartingIQ/TaughtIQ"]
+margin_top = 31.0
+margin_right = 250.0
+margin_bottom = 60.0
+text = "- text -"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQskil3" type="Label" parent="VBoxContainer/StartingIQ/TaughtIQ"]
+margin_top = 62.0
+margin_right = 250.0
+margin_bottom = 91.0
+text = "- text -"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PersonalIQ" type="VBoxContainer" parent="VBoxContainer/StartingIQ"]
+margin_left = 252.0
+margin_right = 502.0
+margin_bottom = 91.0
+size_flags_horizontal = 3
+
+[node name="IQskil1" type="Label" parent="VBoxContainer/StartingIQ/PersonalIQ"]
+margin_right = 250.0
+margin_bottom = 29.0
+text = "- text -"
+align = 1
+
+[node name="IQskil2" type="Label" parent="VBoxContainer/StartingIQ/PersonalIQ"]
+margin_top = 31.0
+margin_right = 250.0
+margin_bottom = 60.0
+text = "- text -"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQskil3" type="Label" parent="VBoxContainer/StartingIQ/PersonalIQ"]
+margin_top = 62.0
+margin_right = 250.0
+margin_bottom = 91.0
+text = "- text -"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LearnedIQskills" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 119.0
+margin_right = 502.0
+margin_bottom = 453.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelIQskills" type="Label" parent="VBoxContainer/LearnedIQskills"]
+margin_right = 502.0
+margin_bottom = 24.0
+custom_styles/normal = ExtResource( 1 )
+text = "-- IQ skills --"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="IQskillTable" type="HBoxContainer" parent="VBoxContainer/LearnedIQskills"]
+margin_top = 26.0
+margin_right = 502.0
+margin_bottom = 334.0
+
+[node name="IQfromLevelUp" type="VBoxContainer" parent="VBoxContainer/LearnedIQskills/IQskillTable"]
+margin_right = 250.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+
+[node name="IQskill1" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_right = 250.0
+margin_bottom = 29.0
+text = "- text -"
+align = 1
+
+[node name="IQskill2" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 31.0
+margin_right = 250.0
+margin_bottom = 60.0
+text = "- text -"
+align = 1
+
+[node name="IQskill3" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 62.0
+margin_right = 250.0
+margin_bottom = 91.0
+text = "- text -"
+align = 1
+
+[node name="IQskill4" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 93.0
+margin_right = 250.0
+margin_bottom = 122.0
+text = "- text -"
+align = 1
+
+[node name="IQskill5" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 124.0
+margin_right = 250.0
+margin_bottom = 153.0
+text = "- text -"
+align = 1
+
+[node name="IQskill6" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 155.0
+margin_right = 250.0
+margin_bottom = 184.0
+text = "- text -"
+align = 1
+
+[node name="IQskill7" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 186.0
+margin_right = 250.0
+margin_bottom = 215.0
+text = "- text -"
+align = 1
+
+[node name="IQskill8" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 217.0
+margin_right = 250.0
+margin_bottom = 246.0
+text = "- text -"
+align = 1
+
+[node name="IQskill9" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 248.0
+margin_right = 250.0
+margin_bottom = 277.0
+text = "- text -"
+align = 1
+
+[node name="IQskill10" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromLevelUp"]
+margin_top = 279.0
+margin_right = 250.0
+margin_bottom = 308.0
+text = "- text -"
+align = 1
+
+[node name="IQfromTutuorAchivement" type="VBoxContainer" parent="VBoxContainer/LearnedIQskills/IQskillTable"]
+margin_left = 252.0
+margin_right = 502.0
+margin_bottom = 308.0
+size_flags_horizontal = 3
+
+[node name="IQskill1" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_right = 250.0
+margin_bottom = 29.0
+text = "- text -"
+align = 1
+
+[node name="IQskill2" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 31.0
+margin_right = 250.0
+margin_bottom = 60.0
+text = "- text -"
+align = 1
+
+[node name="IQskill3" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 62.0
+margin_right = 250.0
+margin_bottom = 91.0
+text = "- text -"
+align = 1
+
+[node name="IQskill4" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 93.0
+margin_right = 250.0
+margin_bottom = 122.0
+text = "- text -"
+align = 1
+
+[node name="IQskill5" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 124.0
+margin_right = 250.0
+margin_bottom = 153.0
+text = "- text -"
+align = 1
+
+[node name="IQskill6" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 155.0
+margin_right = 250.0
+margin_bottom = 184.0
+text = "- text -"
+align = 1
+
+[node name="IQskill7" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 186.0
+margin_right = 250.0
+margin_bottom = 215.0
+text = "- text -"
+align = 1
+
+[node name="IQskill8" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 217.0
+margin_right = 250.0
+margin_bottom = 246.0
+text = "- text -"
+align = 1
+
+[node name="IQskill9" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 248.0
+margin_right = 250.0
+margin_bottom = 277.0
+text = "- text -"
+align = 1
+
+[node name="IQskill10" type="Label" parent="VBoxContainer/LearnedIQskills/IQskillTable/IQfromTutuorAchivement"]
+margin_top = 279.0
+margin_right = 250.0
+margin_bottom = 308.0
+text = "- text -"
+align = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer"]
+margin_top = 455.0
+margin_right = 502.0
+margin_bottom = 475.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/PanelContainer"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 499.0
+margin_bottom = 17.0
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/PanelContainer/PanelContainer"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 493.0
+margin_bottom = 11.0
+
+[node name="ColorRect" type="ColorRect" parent="VBoxContainer/PanelContainer/PanelContainer/PanelContainer"]
+margin_left = 3.0
+margin_top = 3.0
+margin_right = 487.0
+margin_bottom = 5.0
+rect_min_size = Vector2( 2, 2 )

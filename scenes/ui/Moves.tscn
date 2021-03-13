@@ -1,0 +1,497 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://resources/Atlas/typeicons2_atlastexture.tres" type="Texture" id=1]
+[ext_resource path="res://resources/Themes/Lable_separator.tres" type="StyleBox" id=2]
+
+[node name="Moves" type="Control"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 32.0
+margin_right = -3.0
+margin_bottom = -3.0
+
+[node name="CombatStuff" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Status" type="Control" parent="CombatStuff"]
+margin_right = 502.0
+margin_bottom = 83.0
+rect_min_size = Vector2( 0, 83 )
+
+[node name="KnownMoves2" type="Label" parent="CombatStuff/Status"]
+margin_right = 502.0
+margin_bottom = 24.0
+custom_styles/normal = ExtResource( 2 )
+text = "-- Current Status --"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StatusList" type="RichTextLabel" parent="CombatStuff/Status"]
+margin_top = 23.0
+margin_right = 502.0
+margin_bottom = 83.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="KnownMoves" type="Label" parent="CombatStuff"]
+margin_top = 85.0
+margin_right = 502.0
+margin_bottom = 109.0
+custom_styles/normal = ExtResource( 2 )
+text = "-- Known Moves --"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slotMove1" type="Control" parent="CombatStuff"]
+margin_top = 111.0
+margin_right = 502.0
+margin_bottom = 177.0
+rect_min_size = Vector2( 502, 66 )
+
+[node name="slot" type="HBoxContainer" parent="CombatStuff/slotMove1"]
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeIco" type="PanelContainer" parent="CombatStuff/slotMove1/slot"]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="Sprite" type="Sprite" parent="CombatStuff/slotMove1/slot/TypeIco"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Description" type="VBoxContainer" parent="CombatStuff/slotMove1/slot"]
+margin_left = 68.0
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatStuff/slotMove1/slot/Description"]
+margin_right = 434.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CombatStuff/slotMove1/slot/Description/HBoxContainer"]
+margin_right = 106.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+text = "Dark Pulse"
+align = 1
+
+[node name="Description" type="Label" parent="CombatStuff/slotMove1/slot/Description/HBoxContainer"]
+margin_left = 108.0
+margin_right = 434.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "--description--"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CombatStuff/slotMove1/slot/Description"]
+margin_top = 42.0
+margin_right = 434.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 3
+
+[node name="Type" type="Label" parent="CombatStuff/slotMove1/slot/Description/HBoxContainer2"]
+margin_right = 70.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "Special"
+align = 1
+
+[node name="Empty" type="Label" parent="CombatStuff/slotMove1/slot/Description/HBoxContainer2"]
+margin_left = 72.0
+margin_right = 355.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+
+[node name="Stamina Cost" type="Label" parent="CombatStuff/slotMove1/slot/Description/HBoxContainer2"]
+margin_left = 357.0
+margin_right = 434.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 77, 0 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "SP: 33"
+
+[node name="slotMove2" type="Control" parent="CombatStuff"]
+margin_top = 179.0
+margin_right = 502.0
+margin_bottom = 245.0
+rect_min_size = Vector2( 502, 66 )
+
+[node name="slot" type="HBoxContainer" parent="CombatStuff/slotMove2"]
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeIco" type="PanelContainer" parent="CombatStuff/slotMove2/slot"]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="Sprite" type="Sprite" parent="CombatStuff/slotMove2/slot/TypeIco"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Description" type="VBoxContainer" parent="CombatStuff/slotMove2/slot"]
+margin_left = 68.0
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatStuff/slotMove2/slot/Description"]
+margin_right = 434.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CombatStuff/slotMove2/slot/Description/HBoxContainer"]
+margin_right = 106.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+text = "Dark Pulse"
+align = 1
+
+[node name="Description" type="Label" parent="CombatStuff/slotMove2/slot/Description/HBoxContainer"]
+margin_left = 108.0
+margin_right = 434.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "--description--"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CombatStuff/slotMove2/slot/Description"]
+margin_top = 42.0
+margin_right = 434.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 3
+
+[node name="Type" type="Label" parent="CombatStuff/slotMove2/slot/Description/HBoxContainer2"]
+margin_right = 70.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "Special"
+align = 1
+
+[node name="Empty" type="Label" parent="CombatStuff/slotMove2/slot/Description/HBoxContainer2"]
+margin_left = 72.0
+margin_right = 355.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+
+[node name="Stamina Cost" type="Label" parent="CombatStuff/slotMove2/slot/Description/HBoxContainer2"]
+margin_left = 357.0
+margin_right = 434.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 77, 0 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "SP: 33"
+
+[node name="slotMove3" type="Control" parent="CombatStuff"]
+margin_top = 247.0
+margin_right = 502.0
+margin_bottom = 313.0
+rect_min_size = Vector2( 502, 66 )
+
+[node name="slot" type="HBoxContainer" parent="CombatStuff/slotMove3"]
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeIco" type="PanelContainer" parent="CombatStuff/slotMove3/slot"]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="Sprite" type="Sprite" parent="CombatStuff/slotMove3/slot/TypeIco"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Description" type="VBoxContainer" parent="CombatStuff/slotMove3/slot"]
+margin_left = 68.0
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatStuff/slotMove3/slot/Description"]
+margin_right = 434.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CombatStuff/slotMove3/slot/Description/HBoxContainer"]
+margin_right = 106.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+text = "Dark Pulse"
+align = 1
+
+[node name="Description" type="Label" parent="CombatStuff/slotMove3/slot/Description/HBoxContainer"]
+margin_left = 108.0
+margin_right = 434.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "--description--"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CombatStuff/slotMove3/slot/Description"]
+margin_top = 42.0
+margin_right = 434.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 3
+
+[node name="Type" type="Label" parent="CombatStuff/slotMove3/slot/Description/HBoxContainer2"]
+margin_right = 70.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "Special"
+align = 1
+
+[node name="Empty" type="Label" parent="CombatStuff/slotMove3/slot/Description/HBoxContainer2"]
+margin_left = 72.0
+margin_right = 355.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+
+[node name="Stamina Cost" type="Label" parent="CombatStuff/slotMove3/slot/Description/HBoxContainer2"]
+margin_left = 357.0
+margin_right = 434.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 77, 0 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "SP: 33"
+
+[node name="slotMove4" type="Control" parent="CombatStuff"]
+margin_top = 315.0
+margin_right = 502.0
+margin_bottom = 381.0
+rect_min_size = Vector2( 502, 66 )
+
+[node name="slot" type="HBoxContainer" parent="CombatStuff/slotMove4"]
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeIco" type="PanelContainer" parent="CombatStuff/slotMove4/slot"]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="Sprite" type="Sprite" parent="CombatStuff/slotMove4/slot/TypeIco"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Description" type="VBoxContainer" parent="CombatStuff/slotMove4/slot"]
+margin_left = 68.0
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatStuff/slotMove4/slot/Description"]
+margin_right = 434.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CombatStuff/slotMove4/slot/Description/HBoxContainer"]
+margin_right = 106.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+text = "Dark Pulse"
+align = 1
+
+[node name="Description" type="Label" parent="CombatStuff/slotMove4/slot/Description/HBoxContainer"]
+margin_left = 108.0
+margin_right = 434.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "--description--"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CombatStuff/slotMove4/slot/Description"]
+margin_top = 42.0
+margin_right = 434.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 3
+
+[node name="Type" type="Label" parent="CombatStuff/slotMove4/slot/Description/HBoxContainer2"]
+margin_right = 70.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "Special"
+align = 1
+
+[node name="Empty" type="Label" parent="CombatStuff/slotMove4/slot/Description/HBoxContainer2"]
+margin_left = 72.0
+margin_right = 355.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+
+[node name="Stamina Cost" type="Label" parent="CombatStuff/slotMove4/slot/Description/HBoxContainer2"]
+margin_left = 357.0
+margin_right = 434.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 77, 0 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "SP: 33"
+
+[node name="Next Move" type="Label" parent="CombatStuff"]
+margin_top = 383.0
+margin_right = 502.0
+margin_bottom = 407.0
+custom_styles/normal = ExtResource( 2 )
+text = "-- Next Move --"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="slotMovenext" type="Control" parent="CombatStuff"]
+margin_top = 409.0
+margin_right = 502.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 502, 66 )
+
+[node name="slot" type="HBoxContainer" parent="CombatStuff/slotMovenext"]
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TypeIco" type="PanelContainer" parent="CombatStuff/slotMovenext/slot"]
+margin_right = 66.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 66, 66 )
+
+[node name="Sprite" type="Sprite" parent="CombatStuff/slotMovenext/slot/TypeIco"]
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 1, 1 )
+
+[node name="Description" type="VBoxContainer" parent="CombatStuff/slotMovenext/slot"]
+margin_left = 68.0
+margin_right = 502.0
+margin_bottom = 66.0
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CombatStuff/slotMovenext/slot/Description"]
+margin_right = 434.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="Label" parent="CombatStuff/slotMovenext/slot/Description/HBoxContainer"]
+margin_right = 106.0
+margin_bottom = 40.0
+rect_min_size = Vector2( 0, 40 )
+text = "Dark Pulse"
+align = 1
+
+[node name="Description" type="Label" parent="CombatStuff/slotMovenext/slot/Description/HBoxContainer"]
+margin_left = 108.0
+margin_right = 434.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "--description--"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CombatStuff/slotMovenext/slot/Description"]
+margin_top = 42.0
+margin_right = 434.0
+margin_bottom = 66.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 3
+
+[node name="Type" type="Label" parent="CombatStuff/slotMovenext/slot/Description/HBoxContainer2"]
+margin_right = 70.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "Special"
+align = 1
+
+[node name="Requirement" type="Label" parent="CombatStuff/slotMovenext/slot/Description/HBoxContainer2"]
+margin_left = 72.0
+margin_right = 355.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 0, 24 )
+size_flags_horizontal = 3
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "At: 2 Lvl"
+align = 1
+
+[node name="Stamina Cost" type="Label" parent="CombatStuff/slotMovenext/slot/Description/HBoxContainer2"]
+margin_left = 357.0
+margin_right = 434.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 77, 0 )
+size_flags_vertical = 1
+custom_styles/normal = ExtResource( 2 )
+text = "SP: 33"

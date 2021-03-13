@@ -1,0 +1,78 @@
+[gd_scene format=2]
+
+[node name="Journal" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 32.0
+margin_right = -3.0
+margin_bottom = -3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="HBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -3.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Entries" type="PanelContainer" parent="Menu"]
+margin_right = 150.0
+margin_bottom = 685.0
+rect_min_size = Vector2( 150, 0 )
+
+[node name="Queue" type="VBoxContainer" parent="Menu/Entries"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 143.0
+margin_bottom = 678.0
+
+[node name="Button" type="Button" parent="Menu/Entries/Queue"]
+margin_right = 136.0
+margin_bottom = 20.0
+rect_pivot_offset = Vector2( -257.275, 188.812 )
+text = "Entry 1"
+align = 0
+
+[node name="Button2" type="Button" parent="Menu/Entries/Queue"]
+margin_top = 24.0
+margin_right = 136.0
+margin_bottom = 44.0
+rect_pivot_offset = Vector2( -257.275, 188.812 )
+text = "Entry 2"
+align = 0
+
+[node name="Button3" type="Button" parent="Menu/Entries/Queue"]
+margin_top = 48.0
+margin_right = 136.0
+margin_bottom = 68.0
+rect_pivot_offset = Vector2( -257.275, 188.812 )
+text = "Entry 3"
+align = 0
+
+[node name="Button4" type="Button" parent="Menu/Entries/Queue"]
+margin_top = 72.0
+margin_right = 136.0
+margin_bottom = 92.0
+rect_pivot_offset = Vector2( -257.275, 188.812 )
+text = "Entry 4"
+align = 0
+
+[node name="Button5" type="Button" parent="Menu/Entries/Queue"]
+margin_top = 96.0
+margin_right = 136.0
+margin_bottom = 116.0
+rect_pivot_offset = Vector2( -257.275, 188.812 )
+text = "Entry 5"
+align = 0
+
+[node name="EntriesTextbox" type="RichTextLabel" parent="Menu"]
+margin_left = 154.0
+margin_right = 504.0
+margin_bottom = 685.0
+rect_min_size = Vector2( 350, 0 )
