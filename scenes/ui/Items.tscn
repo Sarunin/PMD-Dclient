@@ -1,0 +1,119 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://resources/Themes/Lable_separator.tres" type="StyleBox" id=1]
+
+[node name="Items" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 3.0
+margin_top = 32.0
+margin_right = -3.0
+margin_bottom = -3.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="."]
+margin_right = 502.0
+margin_bottom = 475.0
+rect_min_size = Vector2( 502, 475 )
+
+[node name="List" type="VBoxContainer" parent="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BagLabel" type="Label" parent="Control/List"]
+margin_right = 502.0
+margin_bottom = 15.0
+custom_styles/normal = ExtResource( 1 )
+text = "Bag Capacity: 00 / 50"
+align = 1
+
+[node name="Bag" type="RichTextLabel" parent="Control/List"]
+margin_top = 19.0
+margin_right = 502.0
+margin_bottom = 384.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="EquipedItems" type="Label" parent="Control/List"]
+margin_top = 388.0
+margin_right = 502.0
+margin_bottom = 403.0
+custom_styles/normal = ExtResource( 1 )
+text = "Equipment"
+align = 1
+
+[node name="Equpment" type="HBoxContainer" parent="Control/List"]
+margin_top = 407.0
+margin_right = 502.0
+margin_bottom = 475.0
+
+[node name="SlotNames" type="VBoxContainer" parent="Control/List/Equpment"]
+margin_right = 150.0
+margin_bottom = 68.0
+rect_min_size = Vector2( 150, 0 )
+
+[node name="Armor" type="Label" parent="Control/List/Equpment/SlotNames"]
+margin_right = 150.0
+margin_bottom = 14.0
+text = "Armor"
+align = 1
+
+[node name="Access1" type="Label" parent="Control/List/Equpment/SlotNames"]
+margin_top = 18.0
+margin_right = 150.0
+margin_bottom = 32.0
+text = "Accessory 1"
+align = 1
+
+[node name="Access2" type="Label" parent="Control/List/Equpment/SlotNames"]
+margin_top = 36.0
+margin_right = 150.0
+margin_bottom = 50.0
+text = "Accessory 2"
+align = 1
+
+[node name="Ammo" type="Label" parent="Control/List/Equpment/SlotNames"]
+margin_top = 54.0
+margin_right = 150.0
+margin_bottom = 68.0
+text = "Throwable"
+align = 1
+
+[node name="SlotItems" type="VBoxContainer" parent="Control/List/Equpment"]
+margin_left = 154.0
+margin_right = 502.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+
+[node name="Armor" type="Label" parent="Control/List/Equpment/SlotItems"]
+margin_right = 348.0
+margin_bottom = 14.0
+size_flags_horizontal = 3
+text = "- none -"
+align = 1
+
+[node name="Access1" type="Label" parent="Control/List/Equpment/SlotItems"]
+margin_top = 18.0
+margin_right = 348.0
+margin_bottom = 32.0
+text = "- none -"
+align = 1
+
+[node name="Access2" type="Label" parent="Control/List/Equpment/SlotItems"]
+margin_top = 36.0
+margin_right = 348.0
+margin_bottom = 50.0
+text = "- none -"
+align = 1
+
+[node name="Ammo" type="Label" parent="Control/List/Equpment/SlotItems"]
+margin_top = 54.0
+margin_right = 348.0
+margin_bottom = 68.0
+text = "- none -"
+align = 1
