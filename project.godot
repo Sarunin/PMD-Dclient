@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Reference",
+"class": "BaseMove",
+"language": "GDScript",
+"path": "res://code/game/moves/base_move.gd"
+}, {
 "base": "Status",
 "class": "MajorStatus",
 "language": "GDScript",
@@ -25,14 +30,34 @@ _global_script_classes=[ {
 "path": "res://code/game/minor_status_list.gd"
 }, {
 "base": "Reference",
+"class": "MockEntity",
+"language": "GDScript",
+"path": "res://code/extra/mock/mock_entity.gd"
+}, {
+"base": "Reference",
 "class": "Move",
 "language": "GDScript",
 "path": "res://code/game/moves/move.gd"
+}, {
+"base": "BaseMove",
+"class": "PhysicalMove",
+"language": "GDScript",
+"path": "res://code/game/moves/physical_move.gd"
+}, {
+"base": "BaseMove",
+"class": "SpecialMove",
+"language": "GDScript",
+"path": "res://code/game/moves/special_move.gd"
 }, {
 "base": "Reference",
 "class": "Status",
 "language": "GDScript",
 "path": "res://code/game/status.gd"
+}, {
+"base": "BaseMove",
+"class": "StatusMove",
+"language": "GDScript",
+"path": "res://code/game/moves/status_move.gd"
 }, {
 "base": "PanelContainer",
 "class": "TurnOrderItem",
@@ -40,11 +65,16 @@ _global_script_classes=[ {
 "path": "res://code/ui/turn_order_item.gd"
 } ]
 _global_script_class_icons={
+"BaseMove": "",
 "MajorStatus": "",
 "MinorStatus": "",
 "MinorStatusList": "",
+"MockEntity": "",
 "Move": "",
+"PhysicalMove": "",
+"SpecialMove": "",
 "Status": "",
+"StatusMove": "",
 "TurnOrderItem": ""
 }
 

@@ -11,6 +11,7 @@ onready var EXPbars = get_node("../CommonInfo/Spliter/BasicInfo/Exp/ExpBar")
 onready var typeBox = get_node("../CommonInfo/Spliter/BasicInfo/TypeBox")
 onready var StatBox = get_node("../TabInfo/Stats/Menu/Change/ChangesBox")
 onready var order_list = get_node("../TurnOrder/TurnOrderList")
+onready var database_manager = get_node("/root/DatabaseManager")
 
 var args
 var bfr = ''
@@ -75,6 +76,19 @@ func text_entered(text):
 						'color': 'system',
 						'content': 'Required direction argument',
 					})
+			"/test":
+				var me = load("res://code/extra/mock/mock_entity.gd")
+				var m1 = me.new({
+					"name": "one"
+				})
+				var m2 = me.new({
+					"name": "one"
+				})
+				var move = database_manager.get_move("bug_bite")
+				move.execute({
+					"invoker": m1,
+					"target": m2,
+				})
 			_: # errors check
 				chatLog.print({
 					'color': 'system',
