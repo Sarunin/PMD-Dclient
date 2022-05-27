@@ -127,10 +127,10 @@ copy_mode = 2
 
 [node name="Overlay" type="ColorRect" parent="UI"]
 material = ExtResource( 5 )
-margin_left = -4.0
-margin_top = 4.0
-margin_right = 1276.0
-margin_bottom = 724.0
+margin_left = -3.0
+margin_top = 6.0
+margin_right = 1277.0
+margin_bottom = 726.0
 mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
